@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C863981DADD288003E112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863971DADD288003E112A /* AppDelegate.swift */; };
+		46C8639A1DADD288003E112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863991DADD288003E112A /* ViewController.swift */; };
+		46C8639D1DADD288003E112A /* MooTorrent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */; };
+		46C8639F1DADD288003E112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C8639E1DADD288003E112A /* Assets.xcassets */; };
+		46C863A21DADD288003E112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C863A01DADD288003E112A /* Main.storyboard */; };
+		46C863AD1DADD288003E112A /* MooTorrentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863AC1DADD288003E112A /* MooTorrentTests.swift */; };
+		46C863B81DADD289003E112A /* MooTorrentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863B71DADD289003E112A /* MooTorrentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46C863A91DADD288003E112A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C8638C1DADD288003E112A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C863931DADD288003E112A;
+			remoteInfo = MooTorrent;
+		};
+		46C863B41DADD289003E112A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C8638C1DADD288003E112A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C863931DADD288003E112A;
+			remoteInfo = MooTorrent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46C863941DADD288003E112A /* MooTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C863971DADD288003E112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46C863991DADD288003E112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46C8639C1DADD288003E112A /* MooTorrent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MooTorrent.xcdatamodel; sourceTree = "<group>"; };
+		46C8639E1DADD288003E112A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46C863A11DADD288003E112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46C863A31DADD288003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C863A81DADD288003E112A /* MooTorrentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooTorrentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C863AC1DADD288003E112A /* MooTorrentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooTorrentTests.swift; sourceTree = "<group>"; };
+		46C863AE1DADD288003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C863B31DADD289003E112A /* MooTorrentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooTorrentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C863B71DADD289003E112A /* MooTorrentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooTorrentUITests.swift; sourceTree = "<group>"; };
+		46C863B91DADD289003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C863911DADD288003E112A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C863A51DADD288003E112A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C863B01DADD288003E112A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46C8638B1DADD288003E112A = {
+			isa = PBXGroup;
+			children = (
+				46C863961DADD288003E112A /* MooTorrent */,
+				46C863AB1DADD288003E112A /* MooTorrentTests */,
+				46C863B61DADD289003E112A /* MooTorrentUITests */,
+				46C863951DADD288003E112A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46C863951DADD288003E112A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C863941DADD288003E112A /* MooTorrent.app */,
+				46C863A81DADD288003E112A /* MooTorrentTests.xctest */,
+				46C863B31DADD289003E112A /* MooTorrentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C863961DADD288003E112A /* MooTorrent */ = {
+			isa = PBXGroup;
+			children = (
+				46C863971DADD288003E112A /* AppDelegate.swift */,
+				46C863991DADD288003E112A /* ViewController.swift */,
+				46C8639E1DADD288003E112A /* Assets.xcassets */,
+				46C863A01DADD288003E112A /* Main.storyboard */,
+				46C863A31DADD288003E112A /* Info.plist */,
+				46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */,
+			);
+			path = MooTorrent;
+			sourceTree = "<group>";
+		};
+		46C863AB1DADD288003E112A /* MooTorrentTests */ = {
+			isa = PBXGroup;
+			children = (
+				46C863AC1DADD288003E112A /* MooTorrentTests.swift */,
+				46C863AE1DADD288003E112A /* Info.plist */,
+			);
+			path = MooTorrentTests;
+			sourceTree = "<group>";
+		};
+		46C863B61DADD289003E112A /* MooTorrentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46C863B71DADD289003E112A /* MooTorrentUITests.swift */,
+				46C863B91DADD289003E112A /* Info.plist */,
+			);
+			path = MooTorrentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C863931DADD288003E112A /* MooTorrent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C863BC1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrent" */;
+			buildPhases = (
+				46C863901DADD288003E112A /* Sources */,
+				46C863911DADD288003E112A /* Frameworks */,
+				46C863921DADD288003E112A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MooTorrent;
+			productName = MooTorrent;
+			productReference = 46C863941DADD288003E112A /* MooTorrent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46C863A71DADD288003E112A /* MooTorrentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C863BF1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentTests" */;
+			buildPhases = (
+				46C863A41DADD288003E112A /* Sources */,
+				46C863A51DADD288003E112A /* Frameworks */,
+				46C863A61DADD288003E112A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C863AA1DADD288003E112A /* PBXTargetDependency */,
+			);
+			name = MooTorrentTests;
+			productName = MooTorrentTests;
+			productReference = 46C863A81DADD288003E112A /* MooTorrentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46C863B21DADD288003E112A /* MooTorrentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C863C21DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentUITests" */;
+			buildPhases = (
+				46C863AF1DADD288003E112A /* Sources */,
+				46C863B01DADD288003E112A /* Frameworks */,
+				46C863B11DADD288003E112A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C863B51DADD289003E112A /* PBXTargetDependency */,
+			);
+			name = MooTorrentUITests;
+			productName = MooTorrentUITests;
+			productReference = 46C863B31DADD289003E112A /* MooTorrentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C8638C1DADD288003E112A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Micmoo;
+				TargetAttributes = {
+					46C863931DADD288003E112A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					46C863A71DADD288003E112A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46C863931DADD288003E112A;
+					};
+					46C863B21DADD288003E112A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46C863931DADD288003E112A;
+					};
+				};
+			};
+			buildConfigurationList = 46C8638F1DADD288003E112A /* Build configuration list for PBXProject "MooTorrent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46C8638B1DADD288003E112A;
+			productRefGroup = 46C863951DADD288003E112A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46C863931DADD288003E112A /* MooTorrent */,
+				46C863A71DADD288003E112A /* MooTorrentTests */,
+				46C863B21DADD288003E112A /* MooTorrentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C863921DADD288003E112A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C8639F1DADD288003E112A /* Assets.xcassets in Resources */,
+				46C863A21DADD288003E112A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C863A61DADD288003E112A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C863B11DADD288003E112A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C863901DADD288003E112A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C8639A1DADD288003E112A /* ViewController.swift in Sources */,
+				46C8639D1DADD288003E112A /* MooTorrent.xcdatamodeld in Sources */,
+				46C863981DADD288003E112A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C863A41DADD288003E112A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C863AD1DADD288003E112A /* MooTorrentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C863AF1DADD288003E112A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C863B81DADD289003E112A /* MooTorrentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46C863AA1DADD288003E112A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C863931DADD288003E112A /* MooTorrent */;
+			targetProxy = 46C863A91DADD288003E112A /* PBXContainerItemProxy */;
+		};
+		46C863B51DADD289003E112A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C863931DADD288003E112A /* MooTorrent */;
+			targetProxy = 46C863B41DADD289003E112A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46C863A01DADD288003E112A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46C863A11DADD288003E112A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46C863BA1DADD289003E112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46C863BB1DADD289003E112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		46C863BD1DADD289003E112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		46C863BE1DADD289003E112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		46C863C01DADD289003E112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MooTorrent.app/Contents/MacOS/MooTorrent";
+			};
+			name = Debug;
+		};
+		46C863C11DADD289003E112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MooTorrent.app/Contents/MacOS/MooTorrent";
+			};
+			name = Release;
+		};
+		46C863C31DADD289003E112A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MooTorrent;
+			};
+			name = Debug;
+		};
+		46C863C41DADD289003E112A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MooTorrent;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C8638F1DADD288003E112A /* Build configuration list for PBXProject "MooTorrent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C863BA1DADD289003E112A /* Debug */,
+				46C863BB1DADD289003E112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C863BC1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C863BD1DADD289003E112A /* Debug */,
+				46C863BE1DADD289003E112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46C863BF1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C863C01DADD289003E112A /* Debug */,
+				46C863C11DADD289003E112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46C863C21DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C863C31DADD289003E112A /* Debug */,
+				46C863C41DADD289003E112A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46C8639C1DADD288003E112A /* MooTorrent.xcdatamodel */,
+			);
+			currentVersion = 46C8639C1DADD288003E112A /* MooTorrent.xcdatamodel */;
+			path = MooTorrent.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46C8638C1DADD288003E112A /* Project object */;
+}
