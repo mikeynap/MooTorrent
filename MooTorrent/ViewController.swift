@@ -8,10 +8,10 @@
 
 import Cocoa
 class ViewController: NSViewController {
-
+    var torrentController: TorrentController?
     override func viewDidLoad() {
         super.viewDidLoad()
-        EZTV.init()
+        
         // Do any additional setup after loading the view.
     }
 

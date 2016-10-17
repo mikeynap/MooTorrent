@@ -11,12 +11,12 @@
 		4604F4661DB4895B004F2467 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4604F4651DB4895B004F2467 /* Podfile */; };
 		46C863981DADD288003E112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863971DADD288003E112A /* AppDelegate.swift */; };
 		46C8639A1DADD288003E112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863991DADD288003E112A /* ViewController.swift */; };
-		46C8639D1DADD288003E112A /* MooTorrent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */; };
 		46C8639F1DADD288003E112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C8639E1DADD288003E112A /* Assets.xcassets */; };
 		46C863A21DADD288003E112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C863A01DADD288003E112A /* Main.storyboard */; };
 		46C863AD1DADD288003E112A /* MooTorrentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863AC1DADD288003E112A /* MooTorrentTests.swift */; };
 		46C863B81DADD289003E112A /* MooTorrentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863B71DADD289003E112A /* MooTorrentUITests.swift */; };
-		46C863C61DADDD12003E112A /* eztv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863C51DADDD12003E112A /* eztv.swift */; };
+		46C863C61DADDD12003E112A /* Torrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863C51DADDD12003E112A /* Torrent.swift */; };
+		46CE7E071DB52ED5001DAF89 /* TorrentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7E051DB52322001DAF89 /* TorrentController.swift */; };
 		6795F2ED1871ABA528B7E06E /* Pods_MooTorrentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */; };
 		D0C0403588895A1D35DEA02F /* Pods_MooTorrent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C676F834953C7909689A878E /* Pods_MooTorrent.framework */; };
 /* End PBXBuildFile section */
@@ -40,11 +40,10 @@
 
 /* Begin PBXFileReference section */
 		427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrent.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent.release.xcconfig"; sourceTree = "<group>"; };
-		4604F4651DB4895B004F2467 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		4604F4651DB4895B004F2467 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46C863941DADD288003E112A /* MooTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C863971DADD288003E112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C863991DADD288003E112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46C8639C1DADD288003E112A /* MooTorrent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MooTorrent.xcdatamodel; sourceTree = "<group>"; };
 		46C8639E1DADD288003E112A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C863A11DADD288003E112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46C863A31DADD288003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +53,9 @@
 		46C863B31DADD289003E112A /* MooTorrentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooTorrentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C863B71DADD289003E112A /* MooTorrentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooTorrentUITests.swift; sourceTree = "<group>"; };
 		46C863B91DADD289003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46C863C51DADDD12003E112A /* eztv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eztv.swift; sourceTree = "<group>"; };
+		46C863C51DADDD12003E112A /* Torrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Torrent.swift; sourceTree = "<group>"; };
+		46CE7E051DB52322001DAF89 /* TorrentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentController.swift; sourceTree = "<group>"; };
+		46CE7E091DB53220001DAF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.release.xcconfig"; sourceTree = "<group>"; };
 		86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,8 +138,8 @@
 				46C8639E1DADD288003E112A /* Assets.xcassets */,
 				46C863A01DADD288003E112A /* Main.storyboard */,
 				46C863A31DADD288003E112A /* Info.plist */,
-				46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */,
-				46C863C51DADDD12003E112A /* eztv.swift */,
+				46C863C51DADDD12003E112A /* Torrent.swift */,
+				46CE7E051DB52322001DAF89 /* TorrentController.swift */,
 			);
 			path = MooTorrent;
 			sourceTree = "<group>";
@@ -164,6 +165,7 @@
 		46C863CB1DADE5CD003E112A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46CE7E091DB53220001DAF89 /* Foundation.framework */,
 				C676F834953C7909689A878E /* Pods_MooTorrent.framework */,
 				63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */,
 				A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */,
@@ -453,8 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C8639A1DADD288003E112A /* ViewController.swift in Sources */,
-				46C8639D1DADD288003E112A /* MooTorrent.xcdatamodeld in Sources */,
-				46C863C61DADDD12003E112A /* eztv.swift in Sources */,
+				46CE7E071DB52ED5001DAF89 /* TorrentController.swift in Sources */,
+				46C863C61DADDD12003E112A /* Torrent.swift in Sources */,
 				46C863981DADD288003E112A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +522,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -569,6 +572,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -624,7 +628,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBF0501A3F31DAE42129FEFD /* Pods-MooTorrentTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MooTorrentTests/Info.plist;
@@ -640,7 +644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MooTorrentTests/Info.plist;
@@ -656,7 +660,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3EB96D09AEC3A9719CDD4FA /* Pods-MooTorrentUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MooTorrentUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -671,7 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MooTorrentUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -722,19 +726,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				46C8639C1DADD288003E112A /* MooTorrent.xcdatamodel */,
-			);
-			currentVersion = 46C8639C1DADD288003E112A /* MooTorrent.xcdatamodel */;
-			path = MooTorrent.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 46C8638C1DADD288003E112A /* Project object */;
 }
