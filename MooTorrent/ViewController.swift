@@ -7,12 +7,11 @@
 //
 
 import Cocoa
-
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        EZTV.init()
         // Do any additional setup after loading the view.
     }
 

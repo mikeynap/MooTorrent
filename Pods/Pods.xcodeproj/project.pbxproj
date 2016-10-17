@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D76CB5BA23785659EC68E53E415714 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD63FBD7FBA08F89D8526C174A364E /* Element.swift */; };
+		0AF0413C00FBB3C945936D2A95C7FCD1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239B61BCCC622B8E625507E67C4CA0 /* Parser.swift */; };
+		0C19CCFF5DD3610E95242E065BCB487E /* Pods-MooTorrentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BB1F23210C3B11B27073D94EC9D522 /* Pods-MooTorrentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1085771C11C6818E4441571D3BA48891 /* AEXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3DA76CFC4A95032C73A419129F1836 /* AEXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		332AB931402BE5FFEEFCEBF1780D15E2 /* Pods-MooTorrent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC17A6DB1B07D8AB883FB72BC39E4BB /* Pods-MooTorrent-dummy.m */; };
+		337B59C52A3CC3CB4FD18BD4A8007D5C /* Pods-MooTorrentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AB4F6B8AF51801A07EB310FA97130 /* Pods-MooTorrentTests-dummy.m */; };
+		5A5EB2B88702F96A86045DF9FDBC5588 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A0A982CB077AE6A40E4047EC745B2 /* Error.swift */; };
+		5EF3D3C0F14346C8D11E90DBC874E7B3 /* Pods-MooTorrentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A115F24CC7DD30E1520851C20A74CE7D /* Pods-MooTorrentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F01CFD90AA7184D89C2BCA5D6B6C52F /* Pods-MooTorrentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AECDBF2C1F0227B3BD127B2526ACEDE /* Pods-MooTorrentUITests-dummy.m */; };
+		8BBF70D7064CB2C5614A0A7CBB4F50AF /* Pods-MooTorrent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8BE96D4B2D594576952D241BF60771 /* Pods-MooTorrent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92319884A7C99DF890D1FF49D853CF51 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		92A257CD884C944045595B4587F65FA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		A070B83225779A0BFF4AA16FDC427610 /* AEXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8E65743C3113764504B96F91AF0CC /* AEXML-dummy.m */; };
+		AC7A6C256D5CD0DFD965BBE5F483DF95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		BC67767F4657A1447B84C4703C70C324 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		CD954D51123C65096A31F0420812FE57 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B52E5F3F2C9CFE037E48A7E680DFC /* Options.swift */; };
+		FDC6379DB5D4C32C36D9C705E937D033 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71826DA1CE395D371D044BA74C166D9 /* Document.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC07589E3D3239CEEBEF5EB9C021B79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA894018702D7211C590D385E4F86826;
+			remoteInfo = AEXML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02875F24243459683FF2255F39E1CED6 /* Pods-MooTorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrent.release.xcconfig"; sourceTree = "<group>"; };
+		03BA60944DADD61145D387AD3490BFA5 /* Pods-MooTorrentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MooTorrentUITests.modulemap"; sourceTree = "<group>"; };
+		0760758B3E4A699C78E3A41EEC10744B /* Pods-MooTorrentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MooTorrentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09BB1F23210C3B11B27073D94EC9D522 /* Pods-MooTorrentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MooTorrentTests-umbrella.h"; sourceTree = "<group>"; };
+		0D30AA036FFFF63A21F415BEDB862F90 /* AEXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AEXML.modulemap; sourceTree = "<group>"; };
+		1666339412DC397D40FF8DBD99544BF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC17A6DB1B07D8AB883FB72BC39E4BB /* Pods-MooTorrent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MooTorrent-dummy.m"; sourceTree = "<group>"; };
+		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		1D305ACA23C0ED1678254E1FA4CBD38C /* AEXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-prefix.pch"; sourceTree = "<group>"; };
+		26BDE6BD0C044D113F74D780DD14AD87 /* Pods-MooTorrent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrent.debug.xcconfig"; sourceTree = "<group>"; };
+		2D3971423755938A9AE25E5A32E7830D /* Pods-MooTorrent-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrent-resources.sh"; sourceTree = "<group>"; };
+		2D54E72785ECDB46C1F5C213FED4B7CE /* Pods-MooTorrent-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MooTorrent-acknowledgements.plist"; sourceTree = "<group>"; };
+		329A0A982CB077AE6A40E4047EC745B2 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		332367EE27155A12595F2EED1DE63795 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		335DC692F7B66F4FE840E9B64BC9AE53 /* Pods-MooTorrent-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MooTorrent-acknowledgements.markdown"; sourceTree = "<group>"; };
+		352A95822D4D2144A3D5659B8C51C2F1 /* Pods-MooTorrent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MooTorrent.modulemap"; sourceTree = "<group>"; };
+		38AE26FB50A1753B8D8414439BF036DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47DD63FBD7FBA08F89D8526C174A364E /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		4C3E3FBA8943DABDB0EFC73BEE318FE6 /* Pods-MooTorrentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53AB157F65C2E0A63F82E8831E95B2F6 /* Pods-MooTorrentUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentUITests-resources.sh"; sourceTree = "<group>"; };
+		568B52E5F3F2C9CFE037E48A7E680DFC /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
+		56940777D2744EE415ACAA97E2DCF26B /* Pods_MooTorrentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		595B294106C42985B0FA7F85878E7AE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B4BD1B11E01F22CFF4F13799818F6C /* Pods-MooTorrentTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentTests-frameworks.sh"; sourceTree = "<group>"; };
+		6AECDBF2C1F0227B3BD127B2526ACEDE /* Pods-MooTorrentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MooTorrentUITests-dummy.m"; sourceTree = "<group>"; };
+		6B07E2006465110E8C54ED9DF3FA9EF3 /* Pods-MooTorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E0AB4F6B8AF51801A07EB310FA97130 /* Pods-MooTorrentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MooTorrentTests-dummy.m"; sourceTree = "<group>"; };
+		76DBDA93B8DC3BE078ADB37378B05796 /* Pods-MooTorrentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEXML.xcconfig; sourceTree = "<group>"; };
+		84017DDAE2D2C4F8FCEE2D3E9E259E69 /* Pods_MooTorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0F4B6CA12E3C45D94145B849D3AE60D /* Pods-MooTorrentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MooTorrentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A115F24CC7DD30E1520851C20A74CE7D /* Pods-MooTorrentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MooTorrentUITests-umbrella.h"; sourceTree = "<group>"; };
+		A34856CD8CEB457EBDFE1FD716462C23 /* Pods-MooTorrent-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrent-frameworks.sh"; sourceTree = "<group>"; };
+		A3F8E65743C3113764504B96F91AF0CC /* AEXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEXML-dummy.m"; sourceTree = "<group>"; };
+		A63D3AAD40223B011C0137BDF82BA606 /* Pods-MooTorrentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MooTorrentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A71826DA1CE395D371D044BA74C166D9 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
+		A75DFAB93590BFE1FC4D5E6954DF8A75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC46888B290B85A158DA9B28B359113 /* Pods-MooTorrentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MooTorrentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B24E7B95E889D109D1B1657CABC1AB61 /* Pods-MooTorrentTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentTests-resources.sh"; sourceTree = "<group>"; };
+		B65ED0EA543D4BBFC34BF8AD8C9B2394 /* Pods-MooTorrentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MooTorrentTests.modulemap"; sourceTree = "<group>"; };
+		BCC6C33D54CCE0F7D71C6C2BAA0B1BE8 /* Pods_MooTorrent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6239B61BCCC622B8E625507E67C4CA0 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		D78E96CFDD194D5451561F9C8458F4C7 /* Pods-MooTorrentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA35B9DA00F122202A0034CF80563362 /* Pods-MooTorrentUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentUITests-frameworks.sh"; sourceTree = "<group>"; };
+		ED3DA76CFC4A95032C73A419129F1836 /* AEXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-umbrella.h"; sourceTree = "<group>"; };
+		FD8BE96D4B2D594576952D241BF60771 /* Pods-MooTorrent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MooTorrent-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12D878AA61055092BAD2CB02E7F9ABDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92319884A7C99DF890D1FF49D853CF51 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6D32F50AAF3B7BE34BBB134DDE32FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A257CD884C944045595B4587F65FA6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B0E1054F791BC7E2D3C980CE92199C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC67767F4657A1447B84C4703C70C324 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D3A4765F6EC37B012E355D6649DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7A6C256D5CD0DFD965BBE5F483DF95 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07510ABC39EC8EF356F9251BCD50AF8F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17BB372B7DAF700468B4C994479321D0 /* Pods-MooTorrent */,
+				F7B4EC89BA709E1481EE4989E0D7547E /* Pods-MooTorrentTests */,
+				DC0A5DEE0ECAF6F330BC5A19C15977B4 /* Pods-MooTorrentUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		17BB372B7DAF700468B4C994479321D0 /* Pods-MooTorrent */ = {
+			isa = PBXGroup;
+			children = (
+				A75DFAB93590BFE1FC4D5E6954DF8A75 /* Info.plist */,
+				352A95822D4D2144A3D5659B8C51C2F1 /* Pods-MooTorrent.modulemap */,
+				335DC692F7B66F4FE840E9B64BC9AE53 /* Pods-MooTorrent-acknowledgements.markdown */,
+				2D54E72785ECDB46C1F5C213FED4B7CE /* Pods-MooTorrent-acknowledgements.plist */,
+				1AC17A6DB1B07D8AB883FB72BC39E4BB /* Pods-MooTorrent-dummy.m */,
+				A34856CD8CEB457EBDFE1FD716462C23 /* Pods-MooTorrent-frameworks.sh */,
+				2D3971423755938A9AE25E5A32E7830D /* Pods-MooTorrent-resources.sh */,
+				FD8BE96D4B2D594576952D241BF60771 /* Pods-MooTorrent-umbrella.h */,
+				26BDE6BD0C044D113F74D780DD14AD87 /* Pods-MooTorrent.debug.xcconfig */,
+				02875F24243459683FF2255F39E1CED6 /* Pods-MooTorrent.release.xcconfig */,
+			);
+			name = "Pods-MooTorrent";
+			path = "Target Support Files/Pods-MooTorrent";
+			sourceTree = "<group>";
+		};
+		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C17CEF104526ACA07B6EEE217EC43E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44A50985081DAB3F660F20217FD2BEE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				332367EE27155A12595F2EED1DE63795 /* AEXML.framework */,
+				BCC6C33D54CCE0F7D71C6C2BAA0B1BE8 /* Pods_MooTorrent.framework */,
+				84017DDAE2D2C4F8FCEE2D3E9E259E69 /* Pods_MooTorrentTests.framework */,
+				56940777D2744EE415ACAA97E2DCF26B /* Pods_MooTorrentUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60808A1FE9D094B0C5ADE6989DF4C57F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D30AA036FFFF63A21F415BEDB862F90 /* AEXML.modulemap */,
+				7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */,
+				A3F8E65743C3113764504B96F91AF0CC /* AEXML-dummy.m */,
+				1D305ACA23C0ED1678254E1FA4CBD38C /* AEXML-prefix.pch */,
+				ED3DA76CFC4A95032C73A419129F1836 /* AEXML-umbrella.h */,
+				38AE26FB50A1753B8D8414439BF036DF /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AEXML";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				8A80BA96A9D32501AB683A4FE1C44887 /* Pods */,
+				44A50985081DAB3F660F20217FD2BEE9 /* Products */,
+				07510ABC39EC8EF356F9251BCD50AF8F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A80BA96A9D32501AB683A4FE1C44887 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD6B1BAD7BDE39095F08F278C593092A /* AEXML */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC0A5DEE0ECAF6F330BC5A19C15977B4 /* Pods-MooTorrentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				595B294106C42985B0FA7F85878E7AE0 /* Info.plist */,
+				03BA60944DADD61145D387AD3490BFA5 /* Pods-MooTorrentUITests.modulemap */,
+				A0F4B6CA12E3C45D94145B849D3AE60D /* Pods-MooTorrentUITests-acknowledgements.markdown */,
+				A63D3AAD40223B011C0137BDF82BA606 /* Pods-MooTorrentUITests-acknowledgements.plist */,
+				6AECDBF2C1F0227B3BD127B2526ACEDE /* Pods-MooTorrentUITests-dummy.m */,
+				DA35B9DA00F122202A0034CF80563362 /* Pods-MooTorrentUITests-frameworks.sh */,
+				53AB157F65C2E0A63F82E8831E95B2F6 /* Pods-MooTorrentUITests-resources.sh */,
+				A115F24CC7DD30E1520851C20A74CE7D /* Pods-MooTorrentUITests-umbrella.h */,
+				76DBDA93B8DC3BE078ADB37378B05796 /* Pods-MooTorrentUITests.debug.xcconfig */,
+				4C3E3FBA8943DABDB0EFC73BEE318FE6 /* Pods-MooTorrentUITests.release.xcconfig */,
+			);
+			name = "Pods-MooTorrentUITests";
+			path = "Target Support Files/Pods-MooTorrentUITests";
+			sourceTree = "<group>";
+		};
+		DD6B1BAD7BDE39095F08F278C593092A /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				A71826DA1CE395D371D044BA74C166D9 /* Document.swift */,
+				47DD63FBD7FBA08F89D8526C174A364E /* Element.swift */,
+				329A0A982CB077AE6A40E4047EC745B2 /* Error.swift */,
+				568B52E5F3F2C9CFE037E48A7E680DFC /* Options.swift */,
+				C6239B61BCCC622B8E625507E67C4CA0 /* Parser.swift */,
+				60808A1FE9D094B0C5ADE6989DF4C57F /* Support Files */,
+			);
+			path = AEXML;
+			sourceTree = "<group>";
+		};
+		F7B4EC89BA709E1481EE4989E0D7547E /* Pods-MooTorrentTests */ = {
+			isa = PBXGroup;
+			children = (
+				1666339412DC397D40FF8DBD99544BF3 /* Info.plist */,
+				B65ED0EA543D4BBFC34BF8AD8C9B2394 /* Pods-MooTorrentTests.modulemap */,
+				0760758B3E4A699C78E3A41EEC10744B /* Pods-MooTorrentTests-acknowledgements.markdown */,
+				AAC46888B290B85A158DA9B28B359113 /* Pods-MooTorrentTests-acknowledgements.plist */,
+				6E0AB4F6B8AF51801A07EB310FA97130 /* Pods-MooTorrentTests-dummy.m */,
+				65B4BD1B11E01F22CFF4F13799818F6C /* Pods-MooTorrentTests-frameworks.sh */,
+				B24E7B95E889D109D1B1657CABC1AB61 /* Pods-MooTorrentTests-resources.sh */,
+				09BB1F23210C3B11B27073D94EC9D522 /* Pods-MooTorrentTests-umbrella.h */,
+				D78E96CFDD194D5451561F9C8458F4C7 /* Pods-MooTorrentTests.debug.xcconfig */,
+				6B07E2006465110E8C54ED9DF3FA9EF3 /* Pods-MooTorrentTests.release.xcconfig */,
+			);
+			name = "Pods-MooTorrentTests";
+			path = "Target Support Files/Pods-MooTorrentTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30DB3C5BE693B6FE231FA0BD74E29E5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C19CCFF5DD3610E95242E065BCB487E /* Pods-MooTorrentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C5B9B47C8E4761A59A4101BB8012F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF3D3C0F14346C8D11E90DBC874E7B3 /* Pods-MooTorrentUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2A3012196664CCF179BB363D6DD1D8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1085771C11C6818E4441571D3BA48891 /* AEXML-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8166E4DA590C7CB9618051283D43A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBF70D7064CB2C5614A0A7CBB4F50AF /* Pods-MooTorrent-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4696F8E93E775008CB52054A1A5B6144 /* Pods-MooTorrentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7533B71C05F5463201201A9C3742B5B1 /* Build configuration list for PBXNativeTarget "Pods-MooTorrentUITests" */;
+			buildPhases = (
+				8CCCFD6247F2D9BA01162377AE0DECEE /* Sources */,
+				12D878AA61055092BAD2CB02E7F9ABDC /* Frameworks */,
+				32C5B9B47C8E4761A59A4101BB8012F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MooTorrentUITests";
+			productName = "Pods-MooTorrentUITests";
+			productReference = 56940777D2744EE415ACAA97E2DCF26B /* Pods_MooTorrentUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		527B65E1CB5113B916E791792B3D2A72 /* Pods-MooTorrent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C0FFE267B044CB69E03D5931820F48 /* Build configuration list for PBXNativeTarget "Pods-MooTorrent" */;
+			buildPhases = (
+				48CCD6E13CD99EE8BD7A847BD9B2E77B /* Sources */,
+				F62D3A4765F6EC37B012E355D6649DAB /* Frameworks */,
+				DDE8166E4DA590C7CB9618051283D43A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF7E87DD23EFB77B9CE06F90B3B2120E /* PBXTargetDependency */,
+			);
+			name = "Pods-MooTorrent";
+			productName = "Pods-MooTorrent";
+			productReference = BCC6C33D54CCE0F7D71C6C2BAA0B1BE8 /* Pods_MooTorrent.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA894018702D7211C590D385E4F86826 /* AEXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3C4B81F1FDF6229FFFCAEAA9BD2780B /* Build configuration list for PBXNativeTarget "AEXML" */;
+			buildPhases = (
+				CDDCB90C7295D3AC7B4269FC864AE817 /* Sources */,
+				B1B0E1054F791BC7E2D3C980CE92199C /* Frameworks */,
+				B2A3012196664CCF179BB363D6DD1D8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AEXML;
+			productName = AEXML;
+			productReference = 332367EE27155A12595F2EED1DE63795 /* AEXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAD89B4AA95F32814EC1F9EB51DF0F4F /* Pods-MooTorrentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2BDC1FAA5B8A397A49F3D68D5A9C30 /* Build configuration list for PBXNativeTarget "Pods-MooTorrentTests" */;
+			buildPhases = (
+				08A1CB89D6A9E700AE19C5FEDB00FC9B /* Sources */,
+				7B6D32F50AAF3B7BE34BBB134DDE32FA /* Frameworks */,
+				30DB3C5BE693B6FE231FA0BD74E29E5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MooTorrentTests";
+			productName = "Pods-MooTorrentTests";
+			productReference = 84017DDAE2D2C4F8FCEE2D3E9E259E69 /* Pods_MooTorrentTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 44A50985081DAB3F660F20217FD2BEE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA894018702D7211C590D385E4F86826 /* AEXML */,
+				527B65E1CB5113B916E791792B3D2A72 /* Pods-MooTorrent */,
+				DAD89B4AA95F32814EC1F9EB51DF0F4F /* Pods-MooTorrentTests */,
+				4696F8E93E775008CB52054A1A5B6144 /* Pods-MooTorrentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A1CB89D6A9E700AE19C5FEDB00FC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337B59C52A3CC3CB4FD18BD4A8007D5C /* Pods-MooTorrentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CCD6E13CD99EE8BD7A847BD9B2E77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332AB931402BE5FFEEFCEBF1780D15E2 /* Pods-MooTorrent-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCCFD6247F2D9BA01162377AE0DECEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F01CFD90AA7184D89C2BCA5D6B6C52F /* Pods-MooTorrentUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDCB90C7295D3AC7B4269FC864AE817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A070B83225779A0BFF4AA16FDC427610 /* AEXML-dummy.m in Sources */,
+				FDC6379DB5D4C32C36D9C705E937D033 /* Document.swift in Sources */,
+				06D76CB5BA23785659EC68E53E415714 /* Element.swift in Sources */,
+				5A5EB2B88702F96A86045DF9FDBC5588 /* Error.swift in Sources */,
+				CD954D51123C65096A31F0420812FE57 /* Options.swift in Sources */,
+				0AF0413C00FBB3C945936D2A95C7FCD1 /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF7E87DD23EFB77B9CE06F90B3B2120E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AEXML;
+			target = DA894018702D7211C590D385E4F86826 /* AEXML */;
+			targetProxy = 4CC07589E3D3239CEEBEF5EB9C021B79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14DBBBF332B6EDCB63BC3447DD8F8541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02875F24243459683FF2255F39E1CED6 /* Pods-MooTorrent.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MooTorrent/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-MooTorrent/Pods-MooTorrent.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MooTorrent;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B1B9FEE751184EFB99CD23E0BDA4F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DBDA93B8DC3BE078ADB37378B05796 /* Pods-MooTorrentUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MooTorrentUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MooTorrentUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34342BBF37D3A9ED85FF2EB654934920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		37835E10FC0DF625452C5F67CE630D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3E3FBA8943DABDB0EFC73BEE318FE6 /* Pods-MooTorrentUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MooTorrentUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MooTorrentUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E80C7BEFE340D2BB80DE86E8C69C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B07E2006465110E8C54ED9DF3FA9EF3 /* Pods-MooTorrentTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MooTorrentTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MooTorrentTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E9D9F1DB33B654F5B884C7F30A885D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BDE6BD0C044D113F74D780DD14AD87 /* Pods-MooTorrent.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MooTorrent/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-MooTorrent/Pods-MooTorrent.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MooTorrent;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACBD3FD2DF9F1F8476CBDF49180245A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78E96CFDD194D5451561F9C8458F4C7 /* Pods-MooTorrentTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MooTorrentTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MooTorrentTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D14061B1DC96B51B16FBE5A040D54AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AEXML/AEXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/AEXML/AEXML.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AEXML;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D634E8181497086B1DE5D5E0874FC02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AEXML/AEXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/AEXML/AEXML.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AEXML;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6FC88CB717F413199C282718D2DC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C0FFE267B044CB69E03D5931820F48 /* Build configuration list for PBXNativeTarget "Pods-MooTorrent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9D9F1DB33B654F5B884C7F30A885D3 /* Debug */,
+				14DBBBF332B6EDCB63BC3447DD8F8541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34342BBF37D3A9ED85FF2EB654934920 /* Debug */,
+				F6FC88CB717F413199C282718D2DC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7533B71C05F5463201201A9C3742B5B1 /* Build configuration list for PBXNativeTarget "Pods-MooTorrentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1B9FEE751184EFB99CD23E0BDA4F19 /* Debug */,
+				37835E10FC0DF625452C5F67CE630D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3C4B81F1FDF6229FFFCAEAA9BD2780B /* Build configuration list for PBXNativeTarget "AEXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D634E8181497086B1DE5D5E0874FC02A /* Debug */,
+				D14061B1DC96B51B16FBE5A040D54AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2BDC1FAA5B8A397A49F3D68D5A9C30 /* Build configuration list for PBXNativeTarget "Pods-MooTorrentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBD3FD2DF9F1F8476CBDF49180245A8 /* Debug */,
+				7E80C7BEFE340D2BB80DE86E8C69C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

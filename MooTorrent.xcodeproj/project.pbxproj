@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30F0B4260DA11807277F6C60 /* Pods_MooTorrentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */; };
+		4604F4661DB4895B004F2467 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4604F4651DB4895B004F2467 /* Podfile */; };
 		46C863981DADD288003E112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863971DADD288003E112A /* AppDelegate.swift */; };
 		46C8639A1DADD288003E112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863991DADD288003E112A /* ViewController.swift */; };
 		46C8639D1DADD288003E112A /* MooTorrent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */; };
@@ -14,6 +16,10 @@
 		46C863A21DADD288003E112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C863A01DADD288003E112A /* Main.storyboard */; };
 		46C863AD1DADD288003E112A /* MooTorrentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863AC1DADD288003E112A /* MooTorrentTests.swift */; };
 		46C863B81DADD289003E112A /* MooTorrentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863B71DADD289003E112A /* MooTorrentUITests.swift */; };
+		46C863C61DADDD12003E112A /* eztv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863C51DADDD12003E112A /* eztv.swift */; };
+		46C863CA1DADE573003E112A /* Packages in Resources */ = {isa = PBXBuildFile; fileRef = 46C863C91DADE573003E112A /* Packages */; };
+		6795F2ED1871ABA528B7E06E /* Pods_MooTorrentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */; };
+		D0C0403588895A1D35DEA02F /* Pods_MooTorrent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C676F834953C7909689A878E /* Pods_MooTorrent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrent.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent.release.xcconfig"; sourceTree = "<group>"; };
+		4604F4651DB4895B004F2467 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		46C863941DADD288003E112A /* MooTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C863971DADD288003E112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C863991DADD288003E112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		46C863B31DADD289003E112A /* MooTorrentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooTorrentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C863B71DADD289003E112A /* MooTorrentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooTorrentUITests.swift; sourceTree = "<group>"; };
 		46C863B91DADD289003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C863C51DADDD12003E112A /* eztv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eztv.swift; sourceTree = "<group>"; };
+		46C863C91DADE573003E112A /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Packages; sourceTree = "<group>"; };
+		63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.release.xcconfig"; sourceTree = "<group>"; };
+		86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23956FC9DAACB58546C2E15 /* Pods-MooTorrent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent.debug.xcconfig"; sourceTree = "<group>"; };
+		C676F834953C7909689A878E /* Pods_MooTorrent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3EB96D09AEC3A9719CDD4FA /* Pods-MooTorrentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBF0501A3F31DAE42129FEFD /* Pods-MooTorrentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C0403588895A1D35DEA02F /* Pods_MooTorrent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6795F2ED1871ABA528B7E06E /* Pods_MooTorrentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F0B4260DA11807277F6C60 /* Pods_MooTorrentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3CADDCE79D4A10BE186EE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23956FC9DAACB58546C2E15 /* Pods-MooTorrent.debug.xcconfig */,
+				427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */,
+				FBF0501A3F31DAE42129FEFD /* Pods-MooTorrentTests.debug.xcconfig */,
+				757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */,
+				F3EB96D09AEC3A9719CDD4FA /* Pods-MooTorrentUITests.debug.xcconfig */,
+				86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		46C8638B1DADD288003E112A = {
 			isa = PBXGroup;
 			children = (
+				4604F4651DB4895B004F2467 /* Podfile */,
 				46C863961DADD288003E112A /* MooTorrent */,
 				46C863AB1DADD288003E112A /* MooTorrentTests */,
 				46C863B61DADD289003E112A /* MooTorrentUITests */,
 				46C863951DADD288003E112A /* Products */,
+				46C863CB1DADE5CD003E112A /* Frameworks */,
+				0A3CADDCE79D4A10BE186EE5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +138,10 @@
 				46C863991DADD288003E112A /* ViewController.swift */,
 				46C8639E1DADD288003E112A /* Assets.xcassets */,
 				46C863A01DADD288003E112A /* Main.storyboard */,
+				46C863C91DADE573003E112A /* Packages */,
 				46C863A31DADD288003E112A /* Info.plist */,
 				46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */,
+				46C863C51DADDD12003E112A /* eztv.swift */,
 			);
 			path = MooTorrent;
 			sourceTree = "<group>";
@@ -125,6 +164,16 @@
 			path = MooTorrentUITests;
 			sourceTree = "<group>";
 		};
+		46C863CB1DADE5CD003E112A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C676F834953C7909689A878E /* Pods_MooTorrent.framework */,
+				63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */,
+				A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46C863BC1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrent" */;
 			buildPhases = (
+				A52D60F04DC1D63757343D5B /* [CP] Check Pods Manifest.lock */,
 				46C863901DADD288003E112A /* Sources */,
 				46C863911DADD288003E112A /* Frameworks */,
 				46C863921DADD288003E112A /* Resources */,
+				42550A100D5F4F74A44DFA3D /* [CP] Embed Pods Frameworks */,
+				3EF9F59581B0C15FA9EA8ABF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46C863BF1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentTests" */;
 			buildPhases = (
+				EC8EFDB69495B266968530F0 /* [CP] Check Pods Manifest.lock */,
 				46C863A41DADD288003E112A /* Sources */,
 				46C863A51DADD288003E112A /* Frameworks */,
 				46C863A61DADD288003E112A /* Resources */,
+				80B84EA212484778C6CA401C /* [CP] Embed Pods Frameworks */,
+				0632998CD6036918681C9AD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46C863C21DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentUITests" */;
 			buildPhases = (
+				AD9928E922D2B6B9C1C87A8D /* [CP] Check Pods Manifest.lock */,
 				46C863AF1DADD288003E112A /* Sources */,
 				46C863B01DADD288003E112A /* Frameworks */,
 				46C863B11DADD288003E112A /* Resources */,
+				A393C838798164F59FC8BCB6 /* [CP] Embed Pods Frameworks */,
+				F7327B9F85033B0A942D8A20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C863CA1DADE573003E112A /* Packages in Resources */,
 				46C8639F1DADD288003E112A /* Assets.xcassets in Resources */,
+				4604F4661DB4895B004F2467 /* Podfile in Resources */,
 				46C863A21DADD288003E112A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +313,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0632998CD6036918681C9AD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EF9F59581B0C15FA9EA8ABF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42550A100D5F4F74A44DFA3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B84EA212484778C6CA401C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A393C838798164F59FC8BCB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A52D60F04DC1D63757343D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD9928E922D2B6B9C1C87A8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8EFDB69495B266968530F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7327B9F85033B0A942D8A20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46C863901DADD288003E112A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +458,7 @@
 			files = (
 				46C8639A1DADD288003E112A /* ViewController.swift in Sources */,
 				46C8639D1DADD288003E112A /* MooTorrent.xcdatamodeld in Sources */,
+				46C863C61DADDD12003E112A /* eztv.swift in Sources */,
 				46C863981DADD288003E112A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +598,7 @@
 		};
 		46C863BD1DADD289003E112A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23956FC9DAACB58546C2E15 /* Pods-MooTorrent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -412,6 +612,7 @@
 		};
 		46C863BE1DADD289003E112A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -425,6 +626,7 @@
 		};
 		46C863C01DADD289003E112A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF0501A3F31DAE42129FEFD /* Pods-MooTorrentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -440,6 +642,7 @@
 		};
 		46C863C11DADD289003E112A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -455,6 +658,7 @@
 		};
 		46C863C31DADD289003E112A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3EB96D09AEC3A9719CDD4FA /* Pods-MooTorrentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -469,6 +673,7 @@
 		};
 		46C863C41DADD289003E112A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -500,6 +705,7 @@
 				46C863BE1DADD289003E112A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46C863BF1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +714,7 @@
 				46C863C11DADD289003E112A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46C863C21DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrentUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +723,7 @@
 				46C863C41DADD289003E112A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

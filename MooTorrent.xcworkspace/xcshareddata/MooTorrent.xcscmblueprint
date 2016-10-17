@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A962751F3C94C1D29C67794DF90659CBAC2123C8" : 9223372036854775807,
+    "616F45DC1439478E1D4CB459225054FB5E16CE1C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "460ADC67-2CB1-4D83-A6A7-D409D2740391",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A962751F3C94C1D29C67794DF90659CBAC2123C8" : "MooTorrent\/MooTorrent\/Packages\/NDHpple\/",
+    "616F45DC1439478E1D4CB459225054FB5E16CE1C" : "MooTorrent\/MooTorrent\/Packages\/NDHpple\/Packages\/Clibxml2-1.0.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MooTorrent",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MooTorrent.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/ndavon\/Clibxml2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "616F45DC1439478E1D4CB459225054FB5E16CE1C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ndavon\/NDHpple.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A962751F3C94C1D29C67794DF90659CBAC2123C8"
+    }
+  ]
+}
