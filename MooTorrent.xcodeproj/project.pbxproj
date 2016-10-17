@@ -17,7 +17,6 @@
 		46C863AD1DADD288003E112A /* MooTorrentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863AC1DADD288003E112A /* MooTorrentTests.swift */; };
 		46C863B81DADD289003E112A /* MooTorrentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863B71DADD289003E112A /* MooTorrentUITests.swift */; };
 		46C863C61DADDD12003E112A /* eztv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863C51DADDD12003E112A /* eztv.swift */; };
-		46C863CA1DADE573003E112A /* Packages in Resources */ = {isa = PBXBuildFile; fileRef = 46C863C91DADE573003E112A /* Packages */; };
 		6795F2ED1871ABA528B7E06E /* Pods_MooTorrentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */; };
 		D0C0403588895A1D35DEA02F /* Pods_MooTorrent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C676F834953C7909689A878E /* Pods_MooTorrent.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		46C863B71DADD289003E112A /* MooTorrentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooTorrentUITests.swift; sourceTree = "<group>"; };
 		46C863B91DADD289003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C863C51DADDD12003E112A /* eztv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eztv.swift; sourceTree = "<group>"; };
-		46C863C91DADE573003E112A /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Packages; sourceTree = "<group>"; };
 		63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.release.xcconfig"; sourceTree = "<group>"; };
 		86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				46C863991DADD288003E112A /* ViewController.swift */,
 				46C8639E1DADD288003E112A /* Assets.xcassets */,
 				46C863A01DADD288003E112A /* Main.storyboard */,
-				46C863C91DADE573003E112A /* Packages */,
 				46C863A31DADD288003E112A /* Info.plist */,
 				46C8639B1DADD288003E112A /* MooTorrent.xcdatamodeld */,
 				46C863C51DADDD12003E112A /* eztv.swift */,
@@ -290,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C863CA1DADE573003E112A /* Packages in Resources */,
 				46C8639F1DADD288003E112A /* Assets.xcassets in Resources */,
 				4604F4661DB4895B004F2467 /* Podfile in Resources */,
 				46C863A21DADD288003E112A /* Main.storyboard in Resources */,
