@@ -12,7 +12,7 @@ import CoreWLAN
 
 
 // TODO: Preference for smaller, larger files.
-class TorrentController: ShowSiteDelegate {
+class TorrentController: NSObject, ShowSiteDelegate {
     var shows : Dictionary<String, Show> = Dictionary()
     var showSite : ShowSite
     var networkBlacklist: Set<String> = Set()
@@ -20,10 +20,13 @@ class TorrentController: ShowSiteDelegate {
     var timer: Timer? = nil
     init(shows sshows: Array<String>){
         showSite = EZTV()
-        showSite.delegate = self
         for s in sshows {
             self.shows[s] = Show(name:s)
         }
+        super.init()
+        showSite.delegate = self
+
+
     }
     
     init(withDefaults def: UserDefaults){
@@ -31,6 +34,9 @@ class TorrentController: ShowSiteDelegate {
         let data_shows = def.data(forKey: "torrent_controller_shows")
         if data_shows != nil {
             self.shows = NSKeyedUnarchiver.unarchiveObject(with: data_shows!) as? Dictionary<String, Show> ?? Dictionary()
+            for (_,v) in self.shows {
+                print(v.description)
+            }
         }
 
         let data_queue = def.data(forKey: "torrent_controller_queue")
@@ -44,7 +50,19 @@ class TorrentController: ShowSiteDelegate {
         }
 
         showSite = EZTV()
+        super.init()
         showSite.delegate = self
+    }
+    
+    func addShow(name: String) {
+        let name = name.capitalized
+        if self.shows[name] == nil {
+            self.shows[name] = Show(name:name)
+        }
+    }
+    func removeShow(name: String) {
+        let name = name.capitalized
+        self.shows.removeValue(forKey: name)
     }
     
     func blacklist(ssid: String){
@@ -68,23 +86,21 @@ class TorrentController: ShowSiteDelegate {
             if currShow == nil {
                 continue
             }
+            var smallestSize = Int.max
             var smallestShow: Show? = nil
+            
             for show in showSet.value {
-                if show.episode >= currShow!.episode{
-                    if smallestShow == nil {
-                        smallestShow = show
-                    } else if show.size <= smallestShow!.size {
-                        smallestShow = show
-                    }
+                if show.episode > currShow!.episode && show.size < smallestSize {
+                    smallestSize = show.size
+                    smallestShow = show
                 }
             }
+            
             if smallestShow != nil {
                 synced(lock: downloadQueue){
-                    // for testing
-                    if !downloadQueue.contains(smallestShow!) {
-                        print("Added \(smallestShow!.name) to queue.")
-                    }
+                    print("Added \(smallestShow!.description) to Queue")
                     downloadQueue.insert(smallestShow!)
+                    self.shows[smallestShow!.name] = smallestShow!
                 }
             }
         }
@@ -96,18 +112,11 @@ class TorrentController: ShowSiteDelegate {
             print("Not downloading, ssid blacklisted.")
             return
         }
-        var failed: Set<Show> = []
         synced(lock: downloadQueue){
             while downloadQueue.count > 0 {
                 let s = downloadQueue.popFirst()
-                if !downloadShow(show: s!) {
-                    failed.insert(s!)
-                } else {
-                    print("Downloaded show \(s?.name)")
-                    self.shows[s!.name] = s!
-                }
+                _ = downloadShow(show: s!)
             }
-            downloadQueue = failed
         }
     }
     
@@ -115,15 +124,16 @@ class TorrentController: ShowSiteDelegate {
     
     func downloadShow(show: Show) -> Bool{
         if NSWorkspace.shared().open(show.magnet!) {
-            print("Started Download for show \(show.name)")
+            print("Started Download for show \(show.description)")
             return true
         }
         return false
     }
     
-    func getSSID() -> String {
-        return CWWiFiClient()?.interface(withName:nil)?.ssid() ?? ""
+    func downloadQueueSize() -> Int {
+        return downloadQueue.count
     }
+    
     
     func saveState() {
         let def = UserDefaults.standard
@@ -134,6 +144,9 @@ class TorrentController: ShowSiteDelegate {
         def.set(ashows, forKey: "torrent_controller_shows")
         def.set(blist, forKey: "torrent_controller_blacklist")
         def.set(queue, forKey: "torrent_controller_queue")
+        
+        def.synchronize()
+        
     }
     
 }
@@ -142,5 +155,10 @@ func synced(lock: Any, closure: () -> ()) {
     closure()
     objc_sync_exit(lock)
 }
+
+func getSSID() -> String {
+    return CWWiFiClient()?.interface(withName:nil)?.ssid() ?? ""
+}
+
 
 

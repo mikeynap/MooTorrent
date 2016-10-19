@@ -195,9 +195,8 @@ class Show: NSObject, NSCoding{
         } else {
             self.episode = ""
         }
-        if let size = aDecoder.decodeObject(forKey: "size") as? Int {
-            self.size = size
-        }
+        let size = aDecoder.decodeInteger(forKey: "size")
+        self.size = size
         if let url = aDecoder.decodeObject(forKey:"magnet") as? URL {
             self.magnet = url
         }
