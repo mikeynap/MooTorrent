@@ -108,21 +108,29 @@ class TorrentController: NSObject, ShowSiteDelegate {
     }
     
     func download() {
-        if networkBlacklist.contains(getSSID()) {
-            print("Not downloading, ssid blacklisted.")
+        let ssid = getSSID()
+        if networkBlacklist.contains(ssid) {
+            print("Not downloading, ssid \(ssid) blacklisted.")
             return
         }
+        var res = false
         synced(lock: downloadQueue){
             while downloadQueue.count > 0 {
                 let s = downloadQueue.popFirst()
-                _ = downloadShow(show: s!)
+                res = downloadShow(show: s!)
+                if !res {
+                    downloadQueue.insert(s!)
+                    break
+                }
             }
         }
+        saveState()
     }
     
     
     
     func downloadShow(show: Show) -> Bool{
+        print("Starting trying to download show.")
         if NSWorkspace.shared().open(show.magnet!) {
             print("Started Download for show \(show.description)")
             return true
@@ -150,11 +158,7 @@ class TorrentController: NSObject, ShowSiteDelegate {
     }
     
 }
-func synced(lock: Any, closure: () -> ()) {
-    objc_sync_enter(lock)
-    closure()
-    objc_sync_exit(lock)
-}
+
 
 func getSSID() -> String {
     return CWWiFiClient()?.interface(withName:nil)?.ssid() ?? ""

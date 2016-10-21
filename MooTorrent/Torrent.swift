@@ -23,13 +23,15 @@ protocol ShowSiteDelegate {
     
 }
 
-
+// TODO: Syncronize self.shows
 class EZTV : ShowSite, ShowSiteDelegate{
 
     var url: String = "http://eztv.ag/ezrss.xml"
     var rssURL: URL
     var shows: Dictionary<String, Set<Show>> = Dictionary()
     var delegate: ShowSiteDelegate?
+    
+    
     
     init() {
         rssURL = URL(string: url)!
@@ -60,8 +62,15 @@ class EZTV : ShowSite, ShowSiteDelegate{
             if let data = data {
                 do {
                     let xmlDoc = try AEXMLDocument(xml: data, options: AEXMLOptions.init())
-                    DispatchQueue.main.async(execute: { () -> Void in
+                    let backgroundQueue = DispatchQueue(label: "org.micmoo.syncShows",
+                                                        qos: .background,
+                                                        target: nil)
+
+                    backgroundQueue.sync(execute: { () -> Void in
+                        sleep(10)
                         var newShows : Dictionary<String, Set<Show>> = Dictionary()
+                        var replaceShows: Dictionary<String, Set<Show>> = Dictionary()
+                        
                         for show in xmlDoc.root["channel"]["item"].all! {
                             if show["torrent:magnetURI"].value == nil {
                                 print("No Magnet Link. Continuing")
@@ -75,6 +84,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
                             if self.shows[parsedShow!.name] == nil {
                                 self.shows[parsedShow!.name] = Set()
                             }
+                            
                             if !self.shows[parsedShow!.name]!.contains(parsedShow!) {
                                 self.shows[parsedShow!.name]!.insert(parsedShow!)
                                 if newShows[parsedShow!.name] == nil {
@@ -82,8 +92,15 @@ class EZTV : ShowSite, ShowSiteDelegate{
                                 }
                                 newShows[parsedShow!.name]!.insert(parsedShow!)
                             }
+                            if replaceShows[parsedShow!.name] == nil {
+                                replaceShows[parsedShow!.name] = Set()
+                            }
+                            replaceShows[parsedShow!.name]!.insert(parsedShow!)
                         }
-                        self.delegate?.gotNewShows(shows: newShows)
+                        if newShows.count > 0 {
+                            self.delegate?.gotNewShows(shows: newShows)
+                            self.shows = replaceShows
+                        }
                     })
                 }
                 catch let error as NSError {
@@ -92,7 +109,6 @@ class EZTV : ShowSite, ShowSiteDelegate{
             } else if let error = error {
                 print(error)
             }
-            
         }
         
         task.resume()
@@ -231,6 +247,13 @@ extension String {
         return c
     }
 }
+
+func synced(lock: Any, closure: () -> ()) {
+    objc_sync_enter(lock)
+    closure()
+    objc_sync_exit(lock)
+}
+
 
 
 
