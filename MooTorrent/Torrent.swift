@@ -16,6 +16,7 @@ enum Day : Int {
 protocol ShowSite {
     func syncShows()
     var delegate: ShowSiteDelegate? { get set }
+    var url: String { get set }
 }
 
 protocol ShowSiteDelegate {
@@ -68,7 +69,6 @@ class EZTV : ShowSite, ShowSiteDelegate{
 
                     backgroundQueue.sync(execute: { () -> Void in
                         sleep(10)
-                        var newShows : Dictionary<String, Set<Show>> = Dictionary()
                         var replaceShows: Dictionary<String, Set<Show>> = Dictionary()
                         
                         for show in xmlDoc.root["channel"]["item"].all! {
@@ -80,25 +80,13 @@ class EZTV : ShowSite, ShowSiteDelegate{
                             if parsedShow == nil {
                                 continue
                             }
-                            
-                            if self.shows[parsedShow!.name] == nil {
-                                self.shows[parsedShow!.name] = Set()
-                            }
-                            
-                            if !self.shows[parsedShow!.name]!.contains(parsedShow!) {
-                                self.shows[parsedShow!.name]!.insert(parsedShow!)
-                                if newShows[parsedShow!.name] == nil {
-                                    newShows[parsedShow!.name] = Set()
-                                }
-                                newShows[parsedShow!.name]!.insert(parsedShow!)
-                            }
                             if replaceShows[parsedShow!.name] == nil {
                                 replaceShows[parsedShow!.name] = Set()
                             }
                             replaceShows[parsedShow!.name]!.insert(parsedShow!)
                         }
-                        if newShows.count > 0 {
-                            self.delegate?.gotNewShows(shows: newShows)
+                        if replaceShows.count > 0 {
+                            self.delegate?.gotNewShows(shows: replaceShows)
                             self.shows = replaceShows
                         }
                     })
@@ -117,7 +105,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
     func showFromTitle(title: String, magnet: String?, size: Int) -> Show?{
         let re: NSRegularExpression
         do {
-            re = try NSRegularExpression(pattern: "([A-Za-z0-9. -]+) (S[0-9]+E[0-9]+) .*")
+            re = try NSRegularExpression(pattern: "([A-Za-z0-9. -]+) (S[0-9]+E[0-9]+) (.*)")
         } catch {
             print("Nope!")
             return nil
@@ -135,16 +123,21 @@ class EZTV : ShowSite, ShowSiteDelegate{
             return nil
         }
         
-        return Show(name: collectMatches[0].capitalized, episode: collectMatches[1], magnet: URL.init(string: magnet!)!, size: size)
+        let show =  Show(name: collectMatches[0].capitalized, episode: collectMatches[1], magnet: URL.init(string: magnet!)!, size: size)
+        if collectMatches.count == 3 {
+            show.keyword = collectMatches[2]
+        }
+        return show
 
     }
     
 }
 
-class Show: NSObject, NSCoding{
-    var name: String
+class Show: NSObject, NSCoding, NSCopying{
+    dynamic var name: String
     var episode: String
     var magnet: URL?
+    dynamic var keyword: String?
     var size: Int = 0
 
     
@@ -156,6 +149,9 @@ class Show: NSObject, NSCoding{
         if magnet != nil {
             c += magnet!.absoluteString.unicodeValue()
         }
+        if keyword != nil {
+            c += keyword!.unicodeValue()
+        }
         c += size
         hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
         return hash;
@@ -165,6 +161,13 @@ class Show: NSObject, NSCoding{
     override var hash: Int {
         return hashValue
     }
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        let copy = Show(name: name, episode: episode, magnet: magnet, size: size)
+        copy.keyword = keyword
+        return copy
+    }
+
     
     
     override  func isEqual(_ object: Any?) -> Bool {
@@ -176,6 +179,12 @@ class Show: NSObject, NSCoding{
     
     override var description: String {
         return "\(name) \(episode) \(size)"
+    }
+    
+    override init() {
+        self.name = ""
+        self.episode = "S00E00"
+        super.init()
     }
 
     init(name: String, episode: String) {
@@ -192,7 +201,7 @@ class Show: NSObject, NSCoding{
     }
     
     
-    init(name: String, episode: String, magnet: URL, size: Int){
+    init(name: String, episode: String, magnet: URL?, size: Int){
         self.name = name
         self.episode = episode
         self.magnet = magnet
@@ -211,11 +220,15 @@ class Show: NSObject, NSCoding{
         } else {
             self.episode = ""
         }
+        if let keyword = aDecoder.decodeObject(forKey: "keyword") as? String {
+            self.keyword = keyword
+        }
         let size = aDecoder.decodeInteger(forKey: "size")
         self.size = size
         if let url = aDecoder.decodeObject(forKey:"magnet") as? URL {
             self.magnet = url
         }
+        
     }
     
     public func encode(with aCoder: NSCoder) {
@@ -224,6 +237,9 @@ class Show: NSObject, NSCoding{
         aCoder.encode(self.size, forKey: "size")
         if let url = self.magnet {
             aCoder.encode(url, forKey: "magnet")
+        }
+        if let keyword = self.keyword {
+            aCoder.encode(keyword, forKey: "keyword")
         }
 
     }

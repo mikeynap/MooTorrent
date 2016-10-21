@@ -10,7 +10,7 @@
 		30F0B4260DA11807277F6C60 /* Pods_MooTorrentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */; };
 		4604F4661DB4895B004F2467 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4604F4651DB4895B004F2467 /* Podfile */; };
 		46C863981DADD288003E112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863971DADD288003E112A /* AppDelegate.swift */; };
-		46C8639A1DADD288003E112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863991DADD288003E112A /* ViewController.swift */; };
+		46C8639A1DADD288003E112A /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863991DADD288003E112A /* PreferenceWindowController.swift */; };
 		46C8639F1DADD288003E112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C8639E1DADD288003E112A /* Assets.xcassets */; };
 		46C863A21DADD288003E112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C863A01DADD288003E112A /* Main.storyboard */; };
 		46C863AD1DADD288003E112A /* MooTorrentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863AC1DADD288003E112A /* MooTorrentTests.swift */; };
@@ -43,7 +43,7 @@
 		4604F4651DB4895B004F2467 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46C863941DADD288003E112A /* MooTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C863971DADD288003E112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46C863991DADD288003E112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46C863991DADD288003E112A /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		46C8639E1DADD288003E112A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C863A11DADD288003E112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46C863A31DADD288003E112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				46C863971DADD288003E112A /* AppDelegate.swift */,
-				46C863991DADD288003E112A /* ViewController.swift */,
+				46C863991DADD288003E112A /* PreferenceWindowController.swift */,
 				46C8639E1DADD288003E112A /* Assets.xcassets */,
 				46C863A01DADD288003E112A /* Main.storyboard */,
 				46C863A31DADD288003E112A /* Info.plist */,
@@ -454,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C8639A1DADD288003E112A /* ViewController.swift in Sources */,
+				46C8639A1DADD288003E112A /* PreferenceWindowController.swift in Sources */,
 				46CE7E071DB52ED5001DAF89 /* TorrentController.swift in Sources */,
 				46C863C61DADDD12003E112A /* Torrent.swift in Sources */,
 				46C863981DADD288003E112A /* AppDelegate.swift in Sources */,
@@ -526,7 +526,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -545,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -576,7 +576,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -589,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

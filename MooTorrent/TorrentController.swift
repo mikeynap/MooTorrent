@@ -13,11 +13,30 @@ import CoreWLAN
 
 // TODO: Preference for smaller, larger files.
 class TorrentController: NSObject, ShowSiteDelegate {
-    var shows : Dictionary<String, Show> = Dictionary()
+    dynamic var shows : Dictionary<String, Show> = Dictionary() {
+        willSet {
+            print("WillSet?")
+            for (k,_) in newValue {
+                newValue[k]?.name = k
+            }
+        }
+    }
     var showSite : ShowSite
     var networkBlacklist: Set<String> = Set()
     var downloadQueue : Set<Show> = Set()
     var timer: Timer? = nil
+    dynamic var url: String?  {
+        get { return showSite.url }
+        set(new){ showSite.url = new! }
+    }
+    
+    override init() {
+        showSite = EZTV()
+        super.init()
+        showSite.delegate = self
+
+    }
+
     init(shows sshows: Array<String>){
         showSite = EZTV()
         for s in sshows {
@@ -25,8 +44,6 @@ class TorrentController: NSObject, ShowSiteDelegate {
         }
         super.init()
         showSite.delegate = self
-
-
     }
     
     init(withDefaults def: UserDefaults){
@@ -77,6 +94,7 @@ class TorrentController: NSObject, ShowSiteDelegate {
         timer = Timer.scheduledTimer(timeInterval: t, target: self, selector: #selector(self.getShowListNow), userInfo: nil, repeats: true)
     }
     
+    // TODO: Handle getting two new shows at once.
     
     func gotNewShows(shows: Dictionary<String, Set<Show>>) {
         
@@ -90,9 +108,20 @@ class TorrentController: NSObject, ShowSiteDelegate {
             var smallestShow: Show? = nil
             
             for show in showSet.value {
-                if show.episode > currShow!.episode && show.size < smallestSize {
-                    smallestSize = show.size
-                    smallestShow = show
+                if show.episode > currShow!.episode{
+                    if currShow!.keyword != nil && show.keyword == nil {
+                        continue
+                    }
+                    if currShow!.keyword != nil && currShow!.keyword!.characters.count != 0 {
+                        if show.keyword!.contains(currShow!.keyword!) {
+                            smallestShow = show
+                            break
+                        }
+                    }
+                    if show.size < smallestSize {
+                        smallestSize = show.size
+                        smallestShow = show
+                    }
                 }
             }
             
@@ -100,12 +129,13 @@ class TorrentController: NSObject, ShowSiteDelegate {
                 synced(lock: downloadQueue){
                     print("Added \(smallestShow!.description) to Queue")
                     downloadQueue.insert(smallestShow!)
-                    self.shows[smallestShow!.name] = smallestShow!
+                    self.shows[smallestShow!.name]?.episode = smallestShow!.episode
                 }
             }
         }
         download()
     }
+    
     
     func download() {
         let ssid = getSSID()
@@ -132,9 +162,11 @@ class TorrentController: NSObject, ShowSiteDelegate {
     func downloadShow(show: Show) -> Bool{
         print("Starting trying to download show.")
         if NSWorkspace.shared().open(show.magnet!) {
+            
             print("Started Download for show \(show.description)")
             return true
         }
+        print("Could not open magnet link.")
         return false
     }
     

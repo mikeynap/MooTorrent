@@ -1,11 +1,19 @@
 import Cocoa
 
+/* TODO:
+    preference: Timer
+    preference: Blacklist
+ 
+ */
+
 @NSApplicationMain
 class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
     var torrentController: TorrentController?
+    var preferenceWindowController: PreferenceWindowController!
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     @IBOutlet weak var contextMenu: NSMenu!
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        print("Did Finish...")
         statusItem.menu = contextMenu
         let img = NSImage(named: "AppIcon")
         if img == nil {
@@ -15,26 +23,25 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
             statusItem.button!.image = img
         }
         
-        contextMenu?.addItem(NSMenuItem(title: "Preferences", action:nil, keyEquivalent: "P"))
+        contextMenu?.addItem(NSMenuItem(title: "Preferences", action:#selector(self.showPreferences), keyEquivalent: ","))
         contextMenu?.addItem(NSMenuItem.separator())
         contextMenu?.addItem(NSMenuItem(title: "Quit", action: #selector(self.quit), keyEquivalent: "q"))
-
         
-            
         
-        let default_shows: Array<String> = ["South Park", "Gotham", "Brooklyn Nine-Nine", "Family Guy", "Billions", "The Big Bang Theory"].map() { $0.capitalized }
         let def = UserDefaults.standard
         if def.bool(forKey: "torrent_controller_saved"){
             torrentController = TorrentController(withDefaults: def)
         } else {
-            torrentController = TorrentController(shows: default_shows)
+            torrentController = TorrentController()
         }
         torrentController!.blacklist(ssid: "blizzard")
-        //torrentController!.getShowListNow()
-        torrentController!.getShowList(timer: 5.0)
-        torrentController!.removeShow(name: "Home and away")
+        torrentController!.getShowListNow()
+        torrentController!.getShowList(timer: 30.0)
         
-        // Insert code here to initialize your application
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        self.preferenceWindowController = storyboard.instantiateController(withIdentifier: "preferenceWindowController") as? PreferenceWindowController
+        self.preferenceWindowController.setViewsTorrentController(torrentController)
+        
     }
     
     @IBAction func updateMenu(sender: NSStatusBarButton) {
@@ -44,6 +51,16 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
     func applicationWillTerminate(_ aNotification: Notification) {
         print("Saving")
         torrentController?.saveState()
+    }
+    
+    func showPreferences() {
+        print("Show Preferences")
+        self.preferenceWindowController.showWindow(nil)
+        
+        
+        
+        
+    
     }
     
     func quit() {
