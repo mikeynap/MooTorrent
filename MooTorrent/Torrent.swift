@@ -31,15 +31,24 @@ class EZTV : ShowSite, ShowSiteDelegate{
     var rssURL: URL
     var shows: Dictionary<String, Set<Show>> = Dictionary()
     var delegate: ShowSiteDelegate?
-    
+    var urlSession: URLSession!
+
     
     
     init() {
+        let conf = URLSessionConfiguration.default
+        conf.urlCache = nil
+        conf.requestCachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
+        urlSession = URLSession(configuration: conf)
         rssURL = URL(string: url)!
     }
     
     
     init(url: String){
+        let conf = URLSessionConfiguration.default
+        conf.urlCache = nil
+        conf.requestCachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
+        urlSession = URLSession(configuration: conf)
         self.url = url
         rssURL = URL(string: url)!
     }
@@ -52,9 +61,9 @@ class EZTV : ShowSite, ShowSiteDelegate{
         if delegate == nil {
             delegate = self
         }
-        URLSession.shared.reset(){}
-        URLSession.shared.configuration.requestCachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
-        let task = URLSession.shared.dataTask(with: rssURL){(data, response, error) -> Void in
+        
+        
+        let task = urlSession.dataTask(with: rssURL){(data, response, error) -> Void in
             if error != nil {
                 print(error)
                 return
@@ -63,12 +72,12 @@ class EZTV : ShowSite, ShowSiteDelegate{
             if let data = data {
                 do {
                     let xmlDoc = try AEXMLDocument(xml: data, options: AEXMLOptions.init())
+
                     let backgroundQueue = DispatchQueue(label: "org.micmoo.syncShows",
                                                         qos: .background,
                                                         target: nil)
 
                     backgroundQueue.sync(execute: { () -> Void in
-                        sleep(10)
                         var replaceShows: Dictionary<String, Set<Show>> = Dictionary()
                         
                         for show in xmlDoc.root["channel"]["item"].all! {
@@ -77,6 +86,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
                                 continue
                             }
                             let parsedShow = self.showFromTitle(title: show["title"].value!, magnet: show["torrent:magnetURI"].value, size: Int(show["torrent:contentLength"].value!)!)
+                            
                             if parsedShow == nil {
                                 continue
                             }
@@ -87,9 +97,12 @@ class EZTV : ShowSite, ShowSiteDelegate{
                         }
                         if replaceShows.count > 0 {
                             self.delegate?.gotNewShows(shows: replaceShows)
+                            self.shows.removeAll(keepingCapacity: false)
                             self.shows = replaceShows
                         }
+                        
                     })
+                    
                 }
                 catch let error as NSError {
                     print(error)
@@ -100,12 +113,15 @@ class EZTV : ShowSite, ShowSiteDelegate{
         }
         
         task.resume()
+        urlSession.flush{print("Flushed!")}
+        
+        
     }
     
     func showFromTitle(title: String, magnet: String?, size: Int) -> Show?{
         let re: NSRegularExpression
         do {
-            re = try NSRegularExpression(pattern: "([A-Za-z0-9. -]+) (S[0-9]+E[0-9]+) (.*)")
+            re = try NSRegularExpression(pattern: "([A-Za-z0-9. -]+) (S[0-9]+E[0-9]+|20[0-9][0-9] [0-9][0-9] [0-9][0-9]) (.*)")
         } catch {
             print("Nope!")
             return nil
@@ -120,6 +136,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
             }
         }
         if collectMatches.count < 2 {
+            print("Skipping, \(title)")
             return nil
         }
         
@@ -132,14 +149,12 @@ class EZTV : ShowSite, ShowSiteDelegate{
     }
     
 }
-
 class Show: NSObject, NSCoding, NSCopying{
     dynamic var name: String
     var episode: String
     var magnet: URL?
     dynamic var keyword: String?
-    var size: Int = 0
-
+    var size: Int? = 0
     
     override var hashValue: Int {
         var hash = 5381;
@@ -152,7 +167,10 @@ class Show: NSObject, NSCoding, NSCopying{
         if keyword != nil {
             c += keyword!.unicodeValue()
         }
-        c += size
+        if size != nil {
+            c += size!
+        }
+        
         hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
         return hash;
 
@@ -161,6 +179,13 @@ class Show: NSObject, NSCoding, NSCopying{
     override var hash: Int {
         return hashValue
     }
+    
+    override func copy() -> Any {
+        let copy = Show(name: name, episode: episode, magnet: magnet, size: size)
+        copy.keyword = keyword
+        return copy
+    }
+
     
     func copy(with zone: NSZone? = nil) -> Any {
         let copy = Show(name: name, episode: episode, magnet: magnet, size: size)
@@ -190,6 +215,7 @@ class Show: NSObject, NSCoding, NSCopying{
     init(name: String, episode: String) {
         self.name = name
         self.episode = episode
+
         super.init()
     }
     
@@ -197,15 +223,17 @@ class Show: NSObject, NSCoding, NSCopying{
         self.name = name
         self.episode = "S00E00"
         self.size = Int.max
+
         super.init()
     }
     
     
-    init(name: String, episode: String, magnet: URL?, size: Int){
+    init(name: String, episode: String, magnet: URL?, size: Int?){
         self.name = name
         self.episode = episode
         self.magnet = magnet
         self.size = size
+
         super.init()
     }
     
@@ -223,18 +251,25 @@ class Show: NSObject, NSCoding, NSCopying{
         if let keyword = aDecoder.decodeObject(forKey: "keyword") as? String {
             self.keyword = keyword
         }
-        let size = aDecoder.decodeInteger(forKey: "size")
-        self.size = size
+        
+        if let size = aDecoder.decodeInteger(forKey: "size") as Int?  {
+            self.size = size
+        }
+
         if let url = aDecoder.decodeObject(forKey:"magnet") as? URL {
             self.magnet = url
         }
+
         
     }
     
     public func encode(with aCoder: NSCoder) {
         aCoder.encode(self.name, forKey: "name")
         aCoder.encode(self.episode, forKey: "episode")
-        aCoder.encode(self.size, forKey: "size")
+        if let size = self.size {
+            aCoder.encode(size, forKey: "size")
+    
+        }
         if let url = self.magnet {
             aCoder.encode(url, forKey: "magnet")
         }
@@ -247,6 +282,11 @@ class Show: NSObject, NSCoding, NSCopying{
     
     func isMax() -> Bool {
         return self.episode == "S00E00" && self.size == Int.max
+    }
+    
+    deinit {
+        //print("DEINIT: \(name) \(episode) \(size)")
+        // perform the deinitialization
     }
 }
 

@@ -15,12 +15,14 @@ import CoreWLAN
 class TorrentController: NSObject, ShowSiteDelegate {
     dynamic var shows : Dictionary<String, Show> = Dictionary() {
         willSet {
-            print("WillSet?")
             for (k,_) in newValue {
-                newValue[k]?.name = k
+                newValue[k.capitalized]?.name = k.capitalized
             }
         }
     }
+    
+    
+    
     var showSite : ShowSite
     var networkBlacklist: Set<String> = Set()
     var downloadQueue : Set<Show> = Set()
@@ -97,39 +99,48 @@ class TorrentController: NSObject, ShowSiteDelegate {
     // TODO: Handle getting two new shows at once.
     
     func gotNewShows(shows: Dictionary<String, Set<Show>>) {
-        
-        for showSet in shows {
-            print("Got New Show \(showSet.key)")
-            let currShow : Show? = self.shows[showSet.key]
-            if currShow == nil {
-                continue
+        for (showName, showSet) in shows {
+            var showDict: Dictionary<String, Set<Show>> = Dictionary()
+            for show in showSet {
+                if showDict[show.episode] == nil {
+                    showDict[show.episode] = Set()
+                }
+                showDict[show.episode]!.insert(show)
             }
-            var smallestSize = Int.max
-            var smallestShow: Show? = nil
             
-            for show in showSet.value {
-                if show.episode > currShow!.episode{
-                    if currShow!.keyword != nil && show.keyword == nil {
-                        continue
-                    }
-                    if currShow!.keyword != nil && currShow!.keyword!.characters.count != 0 {
-                        if show.keyword!.contains(currShow!.keyword!) {
+            for (episode, episodeSet) in showDict {
+                print("Got New Show \(showName) \(episode)")
+                let currShow : Show? = self.shows[showName]
+                if currShow == nil {
+                    continue
+                }
+                var smallestSize = Int.max
+                var smallestShow: Show? = nil
+                
+                for show in episodeSet {
+                    if episode > currShow!.episode{
+                        if currShow!.keyword != nil && show.keyword == nil {
+                            continue
+                        }
+                        if currShow!.keyword != nil && currShow!.keyword!.characters.count != 0 {
+                            if show.keyword!.contains(currShow!.keyword!) {
+                                smallestShow = show
+                                break
+                            }
+                            continue
+                        }
+                        if show.size != nil && show.size! < smallestSize {
+                            smallestSize = show.size!
                             smallestShow = show
-                            break
                         }
                     }
-                    if show.size < smallestSize {
-                        smallestSize = show.size
-                        smallestShow = show
-                    }
                 }
-            }
-            
-            if smallestShow != nil {
-                synced(lock: downloadQueue){
-                    print("Added \(smallestShow!.description) to Queue")
-                    downloadQueue.insert(smallestShow!)
-                    self.shows[smallestShow!.name]?.episode = smallestShow!.episode
+                
+                if smallestShow != nil {
+                    synced(lock: downloadQueue){
+                        print("Added \(smallestShow!.description) to Queue")
+                        downloadQueue.insert(smallestShow!.copy() as! Show)
+                    }
                 }
             }
         }
@@ -147,11 +158,18 @@ class TorrentController: NSObject, ShowSiteDelegate {
         synced(lock: downloadQueue){
             while downloadQueue.count > 0 {
                 let s = downloadQueue.popFirst()
+                if self.shows[s!.name] == nil {
+                    continue
+                }
                 res = downloadShow(show: s!)
                 if !res {
                     downloadQueue.insert(s!)
                     break
                 }
+                if self.shows[s!.name] != nil && s!.episode > self.shows[s!.name]!.episode {
+                    self.shows[s!.name]!.episode = s!.episode
+                }
+
             }
         }
         saveState()
@@ -176,6 +194,7 @@ class TorrentController: NSObject, ShowSiteDelegate {
     
     
     func saveState() {
+        print("Saving")
         let def = UserDefaults.standard
         let ashows = NSKeyedArchiver.archivedData(withRootObject: shows)
         let blist = NSKeyedArchiver.archivedData(withRootObject: networkBlacklist)

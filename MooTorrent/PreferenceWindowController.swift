@@ -32,7 +32,7 @@ class PreferenceWindowController: NSWindowController {
 
 class PreferenceViewController: NSViewController {
     @IBOutlet dynamic var torrentController: TorrentController?
-    @IBOutlet dynamic var showDictionary: NSDictionaryController?
+    @IBOutlet weak dynamic var showDictionary: NSDictionaryController?
     dynamic var blacklist: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,7 @@ class PreferenceViewController: NSViewController {
     }
     
     @IBAction func addShow(sender: AnyObject?) {
-        var s = Show(name: "New Show.")
+        let s = Show(name: "New Show.")
         s.keyword = "HDTV"
         torrentController?.shows["New Show"] = s
     }

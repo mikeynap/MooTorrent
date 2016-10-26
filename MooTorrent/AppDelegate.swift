@@ -1,4 +1,5 @@
 import Cocoa
+import ServiceManagement
 
 /* TODO:
     preference: Timer
@@ -13,7 +14,10 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     @IBOutlet weak var contextMenu: NSMenu!
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        print("Did Finish...")
+        let appBundleIdentifier = "org.micmoo.MooTorrentLauncher" as CFString
+        if !SMLoginItemSetEnabled(appBundleIdentifier, true) {
+            print("Could not set enabled...")
+        }
         statusItem.menu = contextMenu
         let img = NSImage(named: "AppIcon")
         if img == nil {
@@ -27,6 +31,8 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
         contextMenu?.addItem(NSMenuItem.separator())
         contextMenu?.addItem(NSMenuItem(title: "Quit", action: #selector(self.quit), keyEquivalent: "q"))
         
+        ValueTransformer.setValueTransformer(CapitalizedTransformer(), forName: NSValueTransformerName("ValueCapitalizedTransformer"))
+
         
         let def = UserDefaults.standard
         if def.bool(forKey: "torrent_controller_saved"){
@@ -34,13 +40,13 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
         } else {
             torrentController = TorrentController()
         }
-        torrentController!.blacklist(ssid: "blizzard")
         torrentController!.getShowListNow()
         torrentController!.getShowList(timer: 30.0)
         
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         self.preferenceWindowController = storyboard.instantiateController(withIdentifier: "preferenceWindowController") as? PreferenceWindowController
         self.preferenceWindowController.setViewsTorrentController(torrentController)
+        
         
     }
     
@@ -79,7 +85,23 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
         print("CLOSED")
     }
 
+}
+
+class CapitalizedTransformer: ValueTransformer {
     
-
-
+    
+    override class func allowsReverseTransformation() -> Bool { //Can I transform back?
+        return true
+    }
+    
+    override func transformedValue(_ value: Any?) -> Any? { //Perform transformation
+        guard let type = value as? String else { return nil }
+        return type.capitalized
+        
+    }
+    override func reverseTransformedValue(_ value: Any?) -> Any? { //Perform transformation
+        guard let type = value as? String else { return nil }
+        return type.capitalized
+        
+    }
 }

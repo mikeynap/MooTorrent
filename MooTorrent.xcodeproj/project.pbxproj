@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		30F0B4260DA11807277F6C60 /* Pods_MooTorrentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */; };
 		4604F4661DB4895B004F2467 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4604F4651DB4895B004F2467 /* Podfile */; };
+		46B01C671DBECFAF00BCE3F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B01C661DBECFAF00BCE3F9 /* AppDelegate.m */; };
+		46B01C6A1DBECFAF00BCE3F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B01C691DBECFAF00BCE3F9 /* main.m */; };
+		46B01C6C1DBECFAF00BCE3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B01C6B1DBECFAF00BCE3F9 /* Assets.xcassets */; };
+		46B01C751DBED04000BCE3F9 /* MooTorrentLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46B01C631DBECFAF00BCE3F9 /* MooTorrentLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46B01C771DBED2B500BCE3F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B01C761DBED2B500BCE3F9 /* MainMenu.xib */; };
 		46C863981DADD288003E112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863971DADD288003E112A /* AppDelegate.swift */; };
 		46C8639A1DADD288003E112A /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863991DADD288003E112A /* PreferenceWindowController.swift */; };
 		46C8639F1DADD288003E112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C8639E1DADD288003E112A /* Assets.xcassets */; };
@@ -38,9 +43,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46B01C741DBED02900BCE3F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				46B01C751DBED04000BCE3F9 /* MooTorrentLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrent.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent.release.xcconfig"; sourceTree = "<group>"; };
 		4604F4651DB4895B004F2467 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4622189C1DBED69800B1FAD6 /* MooTorrent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MooTorrent.entitlements; sourceTree = "<group>"; };
+		46B01C631DBECFAF00BCE3F9 /* MooTorrentLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrentLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B01C651DBECFAF00BCE3F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46B01C661DBECFAF00BCE3F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46B01C691DBECFAF00BCE3F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46B01C6B1DBECFAF00BCE3F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46B01C701DBECFAF00BCE3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B01C761DBED2B500BCE3F9 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		46C863941DADD288003E112A /* MooTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C863971DADD288003E112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C863991DADD288003E112A /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
@@ -67,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46B01C601DBECFAF00BCE3F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46C863911DADD288003E112A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +140,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		46B01C641DBECFAF00BCE3F9 /* MooTorrentLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				46B01C761DBED2B500BCE3F9 /* MainMenu.xib */,
+				46B01C651DBECFAF00BCE3F9 /* AppDelegate.h */,
+				46B01C661DBECFAF00BCE3F9 /* AppDelegate.m */,
+				46B01C6B1DBECFAF00BCE3F9 /* Assets.xcassets */,
+				46B01C701DBECFAF00BCE3F9 /* Info.plist */,
+				46B01C681DBECFAF00BCE3F9 /* Supporting Files */,
+			);
+			path = MooTorrentLauncher;
+			sourceTree = "<group>";
+		};
+		46B01C681DBECFAF00BCE3F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46B01C691DBECFAF00BCE3F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		46C8638B1DADD288003E112A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +168,7 @@
 				46C863961DADD288003E112A /* MooTorrent */,
 				46C863AB1DADD288003E112A /* MooTorrentTests */,
 				46C863B61DADD289003E112A /* MooTorrentUITests */,
+				46B01C641DBECFAF00BCE3F9 /* MooTorrentLauncher */,
 				46C863951DADD288003E112A /* Products */,
 				46C863CB1DADE5CD003E112A /* Frameworks */,
 				0A3CADDCE79D4A10BE186EE5 /* Pods */,
@@ -126,6 +181,7 @@
 				46C863941DADD288003E112A /* MooTorrent.app */,
 				46C863A81DADD288003E112A /* MooTorrentTests.xctest */,
 				46C863B31DADD289003E112A /* MooTorrentUITests.xctest */,
+				46B01C631DBECFAF00BCE3F9 /* MooTorrentLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +189,7 @@
 		46C863961DADD288003E112A /* MooTorrent */ = {
 			isa = PBXGroup;
 			children = (
+				4622189C1DBED69800B1FAD6 /* MooTorrent.entitlements */,
 				46C863971DADD288003E112A /* AppDelegate.swift */,
 				46C863991DADD288003E112A /* PreferenceWindowController.swift */,
 				46C8639E1DADD288003E112A /* Assets.xcassets */,
@@ -176,6 +233,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		46B01C621DBECFAF00BCE3F9 /* MooTorrentLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B01C711DBECFAF00BCE3F9 /* Build configuration list for PBXNativeTarget "MooTorrentLauncher" */;
+			buildPhases = (
+				46B01C5F1DBECFAF00BCE3F9 /* Sources */,
+				46B01C601DBECFAF00BCE3F9 /* Frameworks */,
+				46B01C611DBECFAF00BCE3F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MooTorrentLauncher;
+			productName = MooTorrentLauncher;
+			productReference = 46B01C631DBECFAF00BCE3F9 /* MooTorrentLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 		46C863931DADD288003E112A /* MooTorrent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46C863BC1DADD289003E112A /* Build configuration list for PBXNativeTarget "MooTorrent" */;
@@ -186,6 +260,7 @@
 				46C863921DADD288003E112A /* Resources */,
 				42550A100D5F4F74A44DFA3D /* [CP] Embed Pods Frameworks */,
 				3EF9F59581B0C15FA9EA8ABF /* [CP] Copy Pods Resources */,
+				46B01C741DBED02900BCE3F9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -248,9 +323,18 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Micmoo;
 				TargetAttributes = {
-					46C863931DADD288003E112A = {
+					46B01C621DBECFAF00BCE3F9 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+					};
+					46C863931DADD288003E112A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					46C863A71DADD288003E112A = {
 						CreatedOnToolsVersion = 8.0;
@@ -280,11 +364,21 @@
 				46C863931DADD288003E112A /* MooTorrent */,
 				46C863A71DADD288003E112A /* MooTorrentTests */,
 				46C863B21DADD288003E112A /* MooTorrentUITests */,
+				46B01C621DBECFAF00BCE3F9 /* MooTorrentLauncher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		46B01C611DBECFAF00BCE3F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B01C6C1DBECFAF00BCE3F9 /* Assets.xcassets in Resources */,
+				46B01C771DBED2B500BCE3F9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46C863921DADD288003E112A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +544,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46B01C5F1DBECFAF00BCE3F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B01C6A1DBECFAF00BCE3F9 /* main.m in Sources */,
+				46B01C671DBECFAF00BCE3F9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46C863901DADD288003E112A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +607,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		46B01C721DBECFAF00BCE3F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrentLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		46B01C731DBECFAF00BCE3F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MooTorrentLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		46C863BA1DADD289003E112A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -601,6 +734,8 @@
 			baseConfigurationReference = C23956FC9DAACB58546C2E15 /* Pods-MooTorrent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MooTorrent/MooTorrent.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MooTorrent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -615,6 +750,8 @@
 			baseConfigurationReference = 427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MooTorrent/MooTorrent.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MooTorrent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -689,6 +826,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46B01C711DBECFAF00BCE3F9 /* Build configuration list for PBXNativeTarget "MooTorrentLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B01C721DBECFAF00BCE3F9 /* Debug */,
+				46B01C731DBECFAF00BCE3F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46C8638F1DADD288003E112A /* Build configuration list for PBXProject "MooTorrent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

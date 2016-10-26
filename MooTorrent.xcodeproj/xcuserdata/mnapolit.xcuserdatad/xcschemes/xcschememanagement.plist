@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MooTorrentLauncher.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>46B01C621DBECFAF00BCE3F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>46C863931DADD288003E112A</key>
 		<dict>
 			<key>primary</key>
