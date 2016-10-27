@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06D76CB5BA23785659EC68E53E415714 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD63FBD7FBA08F89D8526C174A364E /* Element.swift */; };
-		0AF0413C00FBB3C945936D2A95C7FCD1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239B61BCCC622B8E625507E67C4CA0 /* Parser.swift */; };
+		06D76CB5BA23785659EC68E53E415714 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3463761635E90A6917DDE1348C47A3E /* Element.swift */; };
+		0AF0413C00FBB3C945936D2A95C7FCD1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79C0A7AB5217100B5630A300E46934 /* Parser.swift */; };
 		0C19CCFF5DD3610E95242E065BCB487E /* Pods-MooTorrentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BB1F23210C3B11B27073D94EC9D522 /* Pods-MooTorrentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1085771C11C6818E4441571D3BA48891 /* AEXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3DA76CFC4A95032C73A419129F1836 /* AEXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1085771C11C6818E4441571D3BA48891 /* AEXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA7E62CD85E9604C24DA9F67EEC1C29 /* AEXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		332AB931402BE5FFEEFCEBF1780D15E2 /* Pods-MooTorrent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC17A6DB1B07D8AB883FB72BC39E4BB /* Pods-MooTorrent-dummy.m */; };
 		337B59C52A3CC3CB4FD18BD4A8007D5C /* Pods-MooTorrentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AB4F6B8AF51801A07EB310FA97130 /* Pods-MooTorrentTests-dummy.m */; };
-		5A5EB2B88702F96A86045DF9FDBC5588 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A0A982CB077AE6A40E4047EC745B2 /* Error.swift */; };
+		5A5EB2B88702F96A86045DF9FDBC5588 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593196E330D204F9E03FF0F9E68203DC /* Error.swift */; };
 		5EF3D3C0F14346C8D11E90DBC874E7B3 /* Pods-MooTorrentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A115F24CC7DD30E1520851C20A74CE7D /* Pods-MooTorrentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F01CFD90AA7184D89C2BCA5D6B6C52F /* Pods-MooTorrentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AECDBF2C1F0227B3BD127B2526ACEDE /* Pods-MooTorrentUITests-dummy.m */; };
 		8BBF70D7064CB2C5614A0A7CBB4F50AF /* Pods-MooTorrent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8BE96D4B2D594576952D241BF60771 /* Pods-MooTorrent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92319884A7C99DF890D1FF49D853CF51 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
 		92A257CD884C944045595B4587F65FA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		A070B83225779A0BFF4AA16FDC427610 /* AEXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8E65743C3113764504B96F91AF0CC /* AEXML-dummy.m */; };
+		A070B83225779A0BFF4AA16FDC427610 /* AEXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C53F4830E8CFEB7496C42BC9157A95DD /* AEXML-dummy.m */; };
 		AC7A6C256D5CD0DFD965BBE5F483DF95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
 		BC67767F4657A1447B84C4703C70C324 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		CD954D51123C65096A31F0420812FE57 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B52E5F3F2C9CFE037E48A7E680DFC /* Options.swift */; };
-		FDC6379DB5D4C32C36D9C705E937D033 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71826DA1CE395D371D044BA74C166D9 /* Document.swift */; };
+		CD954D51123C65096A31F0420812FE57 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C1BA37853ACF2B865DE2698E99FCB /* Options.swift */; };
+		FDC6379DB5D4C32C36D9C705E937D033 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C68243B1307C82614318EF6E564E7 /* Document.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,50 +39,51 @@
 /* Begin PBXFileReference section */
 		02875F24243459683FF2255F39E1CED6 /* Pods-MooTorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrent.release.xcconfig"; sourceTree = "<group>"; };
 		03BA60944DADD61145D387AD3490BFA5 /* Pods-MooTorrentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MooTorrentUITests.modulemap"; sourceTree = "<group>"; };
+		055C68243B1307C82614318EF6E564E7 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
 		0760758B3E4A699C78E3A41EEC10744B /* Pods-MooTorrentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MooTorrentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		09BB1F23210C3B11B27073D94EC9D522 /* Pods-MooTorrentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MooTorrentTests-umbrella.h"; sourceTree = "<group>"; };
-		0D30AA036FFFF63A21F415BEDB862F90 /* AEXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AEXML.modulemap; sourceTree = "<group>"; };
 		1666339412DC397D40FF8DBD99544BF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC17A6DB1B07D8AB883FB72BC39E4BB /* Pods-MooTorrent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MooTorrent-dummy.m"; sourceTree = "<group>"; };
 		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		1D305ACA23C0ED1678254E1FA4CBD38C /* AEXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-prefix.pch"; sourceTree = "<group>"; };
 		26BDE6BD0C044D113F74D780DD14AD87 /* Pods-MooTorrent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrent.debug.xcconfig"; sourceTree = "<group>"; };
 		2D3971423755938A9AE25E5A32E7830D /* Pods-MooTorrent-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrent-resources.sh"; sourceTree = "<group>"; };
 		2D54E72785ECDB46C1F5C213FED4B7CE /* Pods-MooTorrent-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MooTorrent-acknowledgements.plist"; sourceTree = "<group>"; };
-		329A0A982CB077AE6A40E4047EC745B2 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		332367EE27155A12595F2EED1DE63795 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		335DC692F7B66F4FE840E9B64BC9AE53 /* Pods-MooTorrent-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MooTorrent-acknowledgements.markdown"; sourceTree = "<group>"; };
 		352A95822D4D2144A3D5659B8C51C2F1 /* Pods-MooTorrent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MooTorrent.modulemap"; sourceTree = "<group>"; };
-		38AE26FB50A1753B8D8414439BF036DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47DD63FBD7FBA08F89D8526C174A364E /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		3CC094992265AA22479056E231077108 /* AEXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEXML.xcconfig; sourceTree = "<group>"; };
 		4C3E3FBA8943DABDB0EFC73BEE318FE6 /* Pods-MooTorrentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		53AB157F65C2E0A63F82E8831E95B2F6 /* Pods-MooTorrentUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentUITests-resources.sh"; sourceTree = "<group>"; };
-		568B52E5F3F2C9CFE037E48A7E680DFC /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
 		56940777D2744EE415ACAA97E2DCF26B /* Pods_MooTorrentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		593196E330D204F9E03FF0F9E68203DC /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		595B294106C42985B0FA7F85878E7AE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B4BD1B11E01F22CFF4F13799818F6C /* Pods-MooTorrentTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentTests-frameworks.sh"; sourceTree = "<group>"; };
+		6AA7E62CD85E9604C24DA9F67EEC1C29 /* AEXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-umbrella.h"; sourceTree = "<group>"; };
 		6AECDBF2C1F0227B3BD127B2526ACEDE /* Pods-MooTorrentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MooTorrentUITests-dummy.m"; sourceTree = "<group>"; };
 		6B07E2006465110E8C54ED9DF3FA9EF3 /* Pods-MooTorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentTests.release.xcconfig"; sourceTree = "<group>"; };
 		6E0AB4F6B8AF51801A07EB310FA97130 /* Pods-MooTorrentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MooTorrentTests-dummy.m"; sourceTree = "<group>"; };
 		76DBDA93B8DC3BE078ADB37378B05796 /* Pods-MooTorrentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEXML.xcconfig; sourceTree = "<group>"; };
 		84017DDAE2D2C4F8FCEE2D3E9E259E69 /* Pods_MooTorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A64C632BB7F0C5B49D1F85A5F625887 /* AEXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AEXML.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0F4B6CA12E3C45D94145B849D3AE60D /* Pods-MooTorrentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MooTorrentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A115F24CC7DD30E1520851C20A74CE7D /* Pods-MooTorrentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MooTorrentUITests-umbrella.h"; sourceTree = "<group>"; };
+		A3463761635E90A6917DDE1348C47A3E /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
 		A34856CD8CEB457EBDFE1FD716462C23 /* Pods-MooTorrent-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrent-frameworks.sh"; sourceTree = "<group>"; };
-		A3F8E65743C3113764504B96F91AF0CC /* AEXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEXML-dummy.m"; sourceTree = "<group>"; };
+		A5F5E0CDF55BBE021686DAA6A21E1F70 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		A63D3AAD40223B011C0137BDF82BA606 /* Pods-MooTorrentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MooTorrentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A71826DA1CE395D371D044BA74C166D9 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
 		A75DFAB93590BFE1FC4D5E6954DF8A75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC46888B290B85A158DA9B28B359113 /* Pods-MooTorrentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MooTorrentTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B24E7B95E889D109D1B1657CABC1AB61 /* Pods-MooTorrentTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentTests-resources.sh"; sourceTree = "<group>"; };
 		B65ED0EA543D4BBFC34BF8AD8C9B2394 /* Pods-MooTorrentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MooTorrentTests.modulemap"; sourceTree = "<group>"; };
 		BCC6C33D54CCE0F7D71C6C2BAA0B1BE8 /* Pods_MooTorrent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6239B61BCCC622B8E625507E67C4CA0 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		BF79C0A7AB5217100B5630A300E46934 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		C53F4830E8CFEB7496C42BC9157A95DD /* AEXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEXML-dummy.m"; sourceTree = "<group>"; };
 		D78E96CFDD194D5451561F9C8458F4C7 /* Pods-MooTorrentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MooTorrentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA35B9DA00F122202A0034CF80563362 /* Pods-MooTorrentUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MooTorrentUITests-frameworks.sh"; sourceTree = "<group>"; };
-		ED3DA76CFC4A95032C73A419129F1836 /* AEXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-umbrella.h"; sourceTree = "<group>"; };
+		DB9C1BA37853ACF2B865DE2698E99FCB /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
+		FADB0D80F5716BE1FF6A28E6984ACF78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDEB965B90DB91DAE7A5D5EBE4254B4 /* AEXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-prefix.pch"; sourceTree = "<group>"; };
 		FD8BE96D4B2D594576952D241BF60771 /* Pods-MooTorrent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MooTorrent-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +133,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		0EDB4F1516EB63AF40ACA2BA6BA10B28 /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				055C68243B1307C82614318EF6E564E7 /* Document.swift */,
+				A3463761635E90A6917DDE1348C47A3E /* Element.swift */,
+				593196E330D204F9E03FF0F9E68203DC /* Error.swift */,
+				DB9C1BA37853ACF2B865DE2698E99FCB /* Options.swift */,
+				BF79C0A7AB5217100B5630A300E46934 /* Parser.swift */,
+				C514B8F655637D29A9ECE68E1CA33E36 /* Support Files */,
+			);
+			path = AEXML;
+			sourceTree = "<group>";
+		};
 		17BB372B7DAF700468B4C994479321D0 /* Pods-MooTorrent */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,37 +191,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60808A1FE9D094B0C5ADE6989DF4C57F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D30AA036FFFF63A21F415BEDB862F90 /* AEXML.modulemap */,
-				7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */,
-				A3F8E65743C3113764504B96F91AF0CC /* AEXML-dummy.m */,
-				1D305ACA23C0ED1678254E1FA4CBD38C /* AEXML-prefix.pch */,
-				ED3DA76CFC4A95032C73A419129F1836 /* AEXML-umbrella.h */,
-				38AE26FB50A1753B8D8414439BF036DF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AEXML";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				8A80BA96A9D32501AB683A4FE1C44887 /* Pods */,
+				AE2FCCB9BFC8567AA4955069FE5C5F70 /* Pods */,
 				44A50985081DAB3F660F20217FD2BEE9 /* Products */,
 				07510ABC39EC8EF356F9251BCD50AF8F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A80BA96A9D32501AB683A4FE1C44887 /* Pods */ = {
+		9C5EF142433F6BEAAA901A63C9DE550A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD6B1BAD7BDE39095F08F278C593092A /* AEXML */,
+				A5F5E0CDF55BBE021686DAA6A21E1F70 /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE2FCCB9BFC8567AA4955069FE5C5F70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EDB4F1516EB63AF40ACA2BA6BA10B28 /* AEXML */,
+				B42DB5C17F8DFFC17CA6D6C986F0C35F /* Sparkle */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B42DB5C17F8DFFC17CA6D6C986F0C35F /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				9C5EF142433F6BEAAA901A63C9DE550A /* Frameworks */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		C514B8F655637D29A9ECE68E1CA33E36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A64C632BB7F0C5B49D1F85A5F625887 /* AEXML.modulemap */,
+				3CC094992265AA22479056E231077108 /* AEXML.xcconfig */,
+				C53F4830E8CFEB7496C42BC9157A95DD /* AEXML-dummy.m */,
+				FCDEB965B90DB91DAE7A5D5EBE4254B4 /* AEXML-prefix.pch */,
+				6AA7E62CD85E9604C24DA9F67EEC1C29 /* AEXML-umbrella.h */,
+				FADB0D80F5716BE1FF6A28E6984ACF78 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AEXML";
 			sourceTree = "<group>";
 		};
 		DC0A5DEE0ECAF6F330BC5A19C15977B4 /* Pods-MooTorrentUITests */ = {
@@ -226,19 +257,6 @@
 			);
 			name = "Pods-MooTorrentUITests";
 			path = "Target Support Files/Pods-MooTorrentUITests";
-			sourceTree = "<group>";
-		};
-		DD6B1BAD7BDE39095F08F278C593092A /* AEXML */ = {
-			isa = PBXGroup;
-			children = (
-				A71826DA1CE395D371D044BA74C166D9 /* Document.swift */,
-				47DD63FBD7FBA08F89D8526C174A364E /* Element.swift */,
-				329A0A982CB077AE6A40E4047EC745B2 /* Error.swift */,
-				568B52E5F3F2C9CFE037E48A7E680DFC /* Options.swift */,
-				C6239B61BCCC622B8E625507E67C4CA0 /* Parser.swift */,
-				60808A1FE9D094B0C5ADE6989DF4C57F /* Support Files */,
-			);
-			path = AEXML;
 			sourceTree = "<group>";
 		};
 		F7B4EC89BA709E1481EE4989E0D7547E /* Pods-MooTorrentTests */ = {
@@ -679,7 +697,7 @@
 		};
 		D14061B1DC96B51B16FBE5A040D54AD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */;
+			baseConfigurationReference = 3CC094992265AA22479056E231077108 /* AEXML.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -713,7 +731,7 @@
 		};
 		D634E8181497086B1DE5D5E0874FC02A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4F66AC062B8F12652AC8BC16266E76 /* AEXML.xcconfig */;
+			baseConfigurationReference = 3CC094992265AA22479056E231077108 /* AEXML.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

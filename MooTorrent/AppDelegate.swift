@@ -1,6 +1,6 @@
 import Cocoa
 import ServiceManagement
-
+import Sparkle
 /* TODO:
     preference: Timer
     preference: Blacklist
@@ -13,6 +13,7 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
     var preferenceWindowController: PreferenceWindowController!
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     @IBOutlet weak var contextMenu: NSMenu!
+    @IBOutlet weak var sparkle: SUUpdater!
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let appBundleIdentifier = "org.micmoo.MooTorrentLauncher" as CFString
         if !SMLoginItemSetEnabled(appBundleIdentifier, true) {
@@ -46,7 +47,10 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         self.preferenceWindowController = storyboard.instantiateController(withIdentifier: "preferenceWindowController") as? PreferenceWindowController
         self.preferenceWindowController.setViewsTorrentController(torrentController)
-        
+        sparkle.automaticallyChecksForUpdates = true
+        sparkle.automaticallyDownloadsUpdates = true
+        sparkle.checkForUpdatesInBackground()
+
         
     }
     
@@ -60,21 +64,14 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
     }
     
     func showPreferences() {
-        print("Show Preferences")
+        print("Show Preferences 4!")
         self.preferenceWindowController.showWindow(nil)
-        
-        
-        
-        
-    
     }
     
     func quit() {
         NSApplication.shared().terminate(self)
 
     }
-    
-    
     
     func menuWillOpen(_ menu: NSMenu) {
         print("OPENED!")

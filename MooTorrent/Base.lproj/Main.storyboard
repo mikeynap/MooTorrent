@@ -657,6 +657,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MooTorrent" customModuleProvider="target">
                     <connections>
                         <outlet property="contextMenu" destination="Kej-ks-jGi" id="RWW-6m-Rgu"/>
+                        <outlet property="sparkle" destination="AIN-rY-zI7" id="fBD-nk-IzX"/>
                     </connections>
                 </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -665,6 +666,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="p8p-94-cAL"/>
                     </connections>
                 </menu>
+                <customObject id="AIN-rY-zI7" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
