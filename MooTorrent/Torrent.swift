@@ -154,7 +154,7 @@ class Show: NSObject, NSCoding, NSCopying{
     var episode: String
     var magnet: URL?
     dynamic var keyword: String?
-    var size: Int? = 0
+    var size: Int?
     
     override var hashValue: Int {
         var hash = 5381;
@@ -222,7 +222,6 @@ class Show: NSObject, NSCoding, NSCopying{
     init(name:String){
         self.name = name
         self.episode = "S00E00"
-        self.size = Int.max
 
         super.init()
     }
@@ -252,7 +251,7 @@ class Show: NSObject, NSCoding, NSCopying{
             self.keyword = keyword
         }
         
-        if let size = aDecoder.decodeInteger(forKey: "size") as Int?  {
+        if let size = aDecoder.decodeObject(forKey: "size") as? Int  {
             self.size = size
         }
 
@@ -268,7 +267,7 @@ class Show: NSObject, NSCoding, NSCopying{
         aCoder.encode(self.episode, forKey: "episode")
         if let size = self.size {
             aCoder.encode(size, forKey: "size")
-    
+
         }
         if let url = self.magnet {
             aCoder.encode(url, forKey: "magnet")
@@ -281,7 +280,7 @@ class Show: NSObject, NSCoding, NSCopying{
 
     
     func isMax() -> Bool {
-        return self.episode == "S00E00" && self.size == Int.max
+        return self.episode == "S00E00" && self.size == nil
     }
     
     deinit {
