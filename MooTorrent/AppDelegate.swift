@@ -50,8 +50,6 @@ class AppDelegate: NSObject,NSApplicationDelegate,NSMenuDelegate{
         sparkle.automaticallyChecksForUpdates = true
         sparkle.automaticallyDownloadsUpdates = true
         sparkle.checkForUpdatesInBackground()
-
-        
     }
     
     @IBAction func updateMenu(sender: NSStatusBarButton) {
