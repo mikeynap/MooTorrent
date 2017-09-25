@@ -26,13 +26,11 @@ protocol ShowSiteDelegate {
 
 // TODO: Syncronize self.shows
 class EZTV : ShowSite, ShowSiteDelegate{
-
     var url: String = "http://eztv.ag/ezrss.xml"
     var rssURL: URL
     var shows: Dictionary<String, Set<Show>> = Dictionary()
     var delegate: ShowSiteDelegate?
     var urlSession: URLSession!
-
     
     
     init() {
@@ -49,6 +47,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
         conf.urlCache = nil
         conf.requestCachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
         urlSession = URLSession(configuration: conf)
+        
         self.url = url
         rssURL = URL(string: url)!
     }
@@ -65,21 +64,24 @@ class EZTV : ShowSite, ShowSiteDelegate{
         
         let task = urlSession.dataTask(with: rssURL){(data, response, error) -> Void in
             if error != nil {
-                print(error)
+                print(error!)
                 return
             }
             
+            
+            
             if let data = data {
                 do {
-                    let xmlDoc = try AEXMLDocument(xml: data, options: AEXMLOptions.init())
-
+                    let xmlDoc = try AEXMLDocument(xml: data)
                     let backgroundQueue = DispatchQueue(label: "org.micmoo.syncShows",
                                                         qos: .background,
                                                         target: nil)
 
                     backgroundQueue.sync(execute: { () -> Void in
                         var replaceShows: Dictionary<String, Set<Show>> = Dictionary()
-                        
+                        if xmlDoc.root["channel"]["item"].error != nil {
+                            return
+                        }
                         for show in xmlDoc.root["channel"]["item"].all! {
                             if show["torrent:magnetURI"].value == nil {
                                 print("No Magnet Link. Continuing")
@@ -102,7 +104,6 @@ class EZTV : ShowSite, ShowSiteDelegate{
                         }
                         
                     })
-                    
                 }
                 catch let error as NSError {
                     print(error)
@@ -113,7 +114,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
         }
         
         task.resume()
-        urlSession.flush{print("Flushed!")}
+        urlSession.flush{}
         
         
     }
@@ -131,7 +132,7 @@ class EZTV : ShowSite, ShowSiteDelegate{
         var collectMatches: Array<String> = []
         for match in matches {
             for n in 1..<match.numberOfRanges {
-                let substring = t.substring(with: match.rangeAt(n))
+                let substring = t.substring(with: match.range(at: n))
                 collectMatches.append(substring)
             }
         }
@@ -150,10 +151,10 @@ class EZTV : ShowSite, ShowSiteDelegate{
     
 }
 class Show: NSObject, NSCoding, NSCopying{
-    dynamic var name: String
+    @objc dynamic var name: String
     var episode: String
     var magnet: URL?
-    dynamic var keyword: String?
+    @objc dynamic var keyword: String?
     var size: Int?
     
     override var hashValue: Int {
@@ -203,7 +204,7 @@ class Show: NSObject, NSCoding, NSCopying{
     }
     
     override var description: String {
-        return "\(name) \(episode) \(size)"
+        return "\(name) \(episode) \(String(describing: size))"
     }
     
     override init() {

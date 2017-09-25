@@ -10,24 +10,23 @@ import Foundation
 import AEXML
 import CoreWLAN
 
-
 // TODO: Preference for smaller, larger files.
 class TorrentController: NSObject, ShowSiteDelegate {
-    dynamic var shows : Dictionary<String, Show> = Dictionary() {
+    @objc dynamic var shows : Dictionary<String, Show> = Dictionary() {
         willSet {
             for (k,_) in newValue {
                 newValue[k.capitalized]?.name = k.capitalized
+                tvdbController?.add(show: k.capitalized)
             }
         }
     }
     
-    
-    
+    var tvdbController: TVDBController?
     var showSite : ShowSite
     var networkBlacklist: Set<String> = Set()
     var downloadQueue : Set<Show> = Set()
     var timer: Timer? = nil
-    dynamic var url: String?  {
+    @objc dynamic var url: String?  {
         get { return showSite.url }
         set(new){ showSite.url = new! }
     }
@@ -79,6 +78,12 @@ class TorrentController: NSObject, ShowSiteDelegate {
             self.shows[name] = Show(name:name)
         }
     }
+    
+    func setTVDBController(_ c: TVDBController) {
+        tvdbController = c
+        tvdbController!.add(shows: Array(shows.keys))
+    }
+    
     func removeShow(name: String) {
         let name = name.capitalized
         self.shows.removeValue(forKey: name)
@@ -95,8 +100,6 @@ class TorrentController: NSObject, ShowSiteDelegate {
     func getShowList(timer t: Double) {
         timer = Timer.scheduledTimer(timeInterval: t, target: self, selector: #selector(self.getShowListNow), userInfo: nil, repeats: true)
     }
-    
-    // TODO: Handle getting two new shows at once.
     
     func gotNewShows(shows: Dictionary<String, Set<Show>>) {
         for (showName, showSet) in shows {
@@ -179,7 +182,7 @@ class TorrentController: NSObject, ShowSiteDelegate {
     
     func downloadShow(show: Show) -> Bool{
         print("Starting trying to download show.")
-        if NSWorkspace.shared().open(show.magnet!) {
+        if NSWorkspace.shared.open(show.magnet!) {
             
             print("Started Download for show \(show.description)")
             return true
@@ -207,12 +210,13 @@ class TorrentController: NSObject, ShowSiteDelegate {
         def.synchronize()
         
     }
-    
 }
 
 
+
+
 func getSSID() -> String {
-    return CWWiFiClient()?.interface(withName:nil)?.ssid() ?? ""
+    return CWWiFiClient.shared().interface(withName:nil)?.ssid() ?? ""
 }
 
 

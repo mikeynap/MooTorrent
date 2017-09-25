@@ -8,8 +8,8 @@
 
 import Cocoa
 class PreferenceWindowController: NSWindowController {
-    override var windowNibName : String! {
-        return "Preferences"
+    override var windowNibName : NSNib.Name? {
+        return NSNib.Name("Preferences")
     }
 
     func setViewsTorrentController(_ torrentController: TorrentController?) {
@@ -33,7 +33,7 @@ class PreferenceWindowController: NSWindowController {
 class PreferenceViewController: NSViewController {
     @IBOutlet dynamic var torrentController: TorrentController?
     @IBOutlet weak dynamic var showDictionary: NSDictionaryController?
-    dynamic var blacklist: String = ""
+    @objc dynamic var blacklist: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -56,9 +56,7 @@ class PreferenceViewController: NSViewController {
     }
     
     @IBAction func addShow(sender: AnyObject?) {
-        let s = Show(name: "New Show.")
-        s.keyword = "HDTV"
-        torrentController?.shows["New Show"] = s
+        torrentController?.addShow(name: "New Show")
     }
     
 }

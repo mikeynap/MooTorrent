@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -657,7 +658,6 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MooTorrent" customModuleProvider="target">
                     <connections>
                         <outlet property="contextMenu" destination="Kej-ks-jGi" id="RWW-6m-Rgu"/>
-                        <outlet property="sparkle" destination="AIN-rY-zI7" id="fBD-nk-IzX"/>
                     </connections>
                 </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -666,7 +666,6 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="p8p-94-cAL"/>
                     </connections>
                 </menu>
-                <customObject id="AIN-rY-zI7" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
@@ -679,6 +678,9 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="GJY-gt-La3" id="gBI-c5-Qbc"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="hcV-rc-Han" kind="relationship" relationship="window.shadowedContentViewController" id="Ctw-kW-aW5"/>

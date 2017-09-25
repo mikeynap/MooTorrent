@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		30F0B4260DA11807277F6C60 /* Pods_MooTorrentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D96198E63990F8E8303010 /* Pods_MooTorrentUITests.framework */; };
 		4604F4661DB4895B004F2467 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4604F4651DB4895B004F2467 /* Podfile */; };
+		46200E091DD17467003D927A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 46200E081DD17467003D927A /* dsa_pub.pem */; };
+		464287A31DC063C8000E3846 /* TVDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464287A21DC063C8000E3846 /* TVDB.swift */; };
 		46B01C671DBECFAF00BCE3F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B01C661DBECFAF00BCE3F9 /* AppDelegate.m */; };
 		46B01C6A1DBECFAF00BCE3F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B01C691DBECFAF00BCE3F9 /* main.m */; };
 		46B01C6C1DBECFAF00BCE3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B01C6B1DBECFAF00BCE3F9 /* Assets.xcassets */; };
@@ -22,6 +24,7 @@
 		46C863B81DADD289003E112A /* MooTorrentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863B71DADD289003E112A /* MooTorrentUITests.swift */; };
 		46C863C61DADDD12003E112A /* Torrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C863C51DADDD12003E112A /* Torrent.swift */; };
 		46CE7E071DB52ED5001DAF89 /* TorrentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE7E051DB52322001DAF89 /* TorrentController.swift */; };
+		46F5AA4E1DC13FCF00452F12 /* TVDBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5AA4D1DC13FCF00452F12 /* TVDBController.swift */; };
 		6795F2ED1871ABA528B7E06E /* Pods_MooTorrentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */; };
 		D0C0403588895A1D35DEA02F /* Pods_MooTorrent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C676F834953C7909689A878E /* Pods_MooTorrent.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +62,9 @@
 /* Begin PBXFileReference section */
 		427D06CC6CA0BD03182A31A8 /* Pods-MooTorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrent.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent.release.xcconfig"; sourceTree = "<group>"; };
 		4604F4651DB4895B004F2467 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46200E081DD17467003D927A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		4622189C1DBED69800B1FAD6 /* MooTorrent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MooTorrent.entitlements; sourceTree = "<group>"; };
+		464287A21DC063C8000E3846 /* TVDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVDB.swift; sourceTree = "<group>"; };
 		46B01C631DBECFAF00BCE3F9 /* MooTorrentLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooTorrentLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B01C651DBECFAF00BCE3F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46B01C661DBECFAF00BCE3F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		46C863C51DADDD12003E112A /* Torrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Torrent.swift; sourceTree = "<group>"; };
 		46CE7E051DB52322001DAF89 /* TorrentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentController.swift; sourceTree = "<group>"; };
 		46CE7E091DB53220001DAF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46F5AA4D1DC13FCF00452F12 /* TVDBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVDBController.swift; sourceTree = "<group>"; };
 		63E58A48901871B59AF9F1A4 /* Pods_MooTorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MooTorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		757452C31FA33B1E000625BD /* Pods-MooTorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentTests/Pods-MooTorrentTests.release.xcconfig"; sourceTree = "<group>"; };
 		86A3CEF9BE572FEEA284BCB5 /* Pods-MooTorrentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MooTorrentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MooTorrentUITests/Pods-MooTorrentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,10 +199,13 @@
 				46C863971DADD288003E112A /* AppDelegate.swift */,
 				46C863991DADD288003E112A /* PreferenceWindowController.swift */,
 				46C8639E1DADD288003E112A /* Assets.xcassets */,
+				46200E081DD17467003D927A /* dsa_pub.pem */,
 				46C863A01DADD288003E112A /* Main.storyboard */,
 				46C863A31DADD288003E112A /* Info.plist */,
 				46C863C51DADDD12003E112A /* Torrent.swift */,
 				46CE7E051DB52322001DAF89 /* TorrentController.swift */,
+				464287A21DC063C8000E3846 /* TVDB.swift */,
+				46F5AA4D1DC13FCF00452F12 /* TVDBController.swift */,
 			);
 			path = MooTorrent;
 			sourceTree = "<group>";
@@ -320,16 +329,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Micmoo;
 				TargetAttributes = {
 					46B01C621DBECFAF00BCE3F9 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2K3KVWQ6BZ;
 						ProvisioningStyle = Automatic;
 					};
 					46C863931DADD288003E112A = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 2K3KVWQ6BZ;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -338,11 +350,13 @@
 					};
 					46C863A71DADD288003E112A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 46C863931DADD288003E112A;
 					};
 					46C863B21DADD288003E112A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 46C863931DADD288003E112A;
 					};
@@ -384,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C8639F1DADD288003E112A /* Assets.xcassets in Resources */,
+				46200E091DD17467003D927A /* dsa_pub.pem in Resources */,
 				4604F4661DB4895B004F2467 /* Podfile in Resources */,
 				46C863A21DADD288003E112A /* Main.storyboard in Resources */,
 			);
@@ -442,9 +457,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MooTorrent/Pods-MooTorrent-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -487,13 +513,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MooTorrent-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD9928E922D2B6B9C1C87A8D /* [CP] Check Pods Manifest.lock */ = {
@@ -502,13 +531,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MooTorrentUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC8EFDB69495B266968530F0 /* [CP] Check Pods Manifest.lock */ = {
@@ -517,13 +549,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MooTorrentTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7327B9F85033B0A942D8A20 /* [CP] Copy Pods Resources */ = {
@@ -557,6 +592,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464287A31DC063C8000E3846 /* TVDB.swift in Sources */,
+				46F5AA4E1DC13FCF00452F12 /* TVDBController.swift in Sources */,
 				46C8639A1DADD288003E112A /* PreferenceWindowController.swift in Sources */,
 				46CE7E071DB52ED5001DAF89 /* TorrentController.swift in Sources */,
 				46C863C61DADDD12003E112A /* Torrent.swift in Sources */,
@@ -611,13 +648,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2K3KVWQ6BZ;
 				INFOPLIST_FILE = MooTorrentLauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -626,13 +666,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2K3KVWQ6BZ;
 				INFOPLIST_FILE = MooTorrentLauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrentLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -646,7 +689,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -654,7 +699,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -696,7 +745,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -704,7 +755,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -735,13 +790,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MooTorrent/MooTorrent.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2K3KVWQ6BZ;
 				INFOPLIST_FILE = MooTorrent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -751,13 +811,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MooTorrent/MooTorrent.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2K3KVWQ6BZ;
 				INFOPLIST_FILE = MooTorrent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.micmoo.MooTorrent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
